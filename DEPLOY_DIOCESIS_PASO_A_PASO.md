@@ -56,6 +56,13 @@ Sigue la guía completa en: **`GUIA_GIT_DIOCESIS.md`**
 
 ```bash
 cd /var/www
+
+# Si ya creaste el directorio con mkdir, elimínalo primero:
+# sudo rmdir diocesis  (si está vacío)
+# o
+# sudo rm -rf diocesis  (si tiene contenido)
+
+# Clonar el repositorio (Git creará el directorio automáticamente)
 git clone https://github.com/TU_USUARIO/diocesis.git
 cd diocesis
 ```
