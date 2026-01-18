@@ -1,0 +1,227 @@
+.tramites-page {
+  min-height: 100vh;
+}
+
+.tramites-hero {
+  background: linear-gradient(135deg, #2e7d32 0%, #66bb6a 100%);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.tramites-hero h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+.tramites-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.tramites-content {
+  padding: 3rem 0;
+}
+
+.tramites-filters {
+  margin-bottom: 2rem;
+}
+
+.search-box {
+  margin-bottom: 1.5rem;
+}
+
+.search-box input {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #2e7d32;
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover {
+  border-color: #2e7d32;
+  color: #2e7d32;
+}
+
+.filter-btn.active {
+  background: #2e7d32;
+  color: white;
+  border-color: #2e7d32;
+}
+
+.tramites-section {
+  margin-bottom: 3rem;
+}
+
+.tramites-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.tramites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.tramite-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.tramite-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.tramite-card.destacado {
+  border-color: #ffc107;
+  background: linear-gradient(to bottom, #fff9e6 0%, white 20%);
+}
+
+.tramite-badge-destacado {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #ffc107;
+  color: #333;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.tramite-card h3 {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+  font-size: 1.3rem;
+  padding-right: 100px;
+}
+
+.tramite-descripcion {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tramite-info {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.info-item {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.tramite-details {
+  margin-bottom: 1rem;
+}
+
+.tramite-details h4 {
+  color: #2e7d32;
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.tramite-details ul,
+.tramite-details ol {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #666;
+}
+
+.tramite-details li {
+  margin-bottom: 0.25rem;
+  line-height: 1.5;
+}
+
+.tramite-contacto {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.tramite-contacto h4 {
+  color: #2e7d32;
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.tramite-contacto p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .tramites-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tramite-card h3 {
+    padding-right: 0;
+  }
+
+  .tramite-badge-destacado {
+    position: static;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

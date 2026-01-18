@@ -1,0 +1,146 @@
+/* Archivo de corrección de centrado - Asegura que todas las secciones estén centradas */
+
+/* Asegurar que el body y html no tengan problemas de alineación */
+body,
+html {
+  text-align: left !important;
+}
+
+body > *,
+#root > *,
+.App > * {
+  text-align: left !important;
+}
+
+/* Asegurar que main-content esté centrado */
+.main-content {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+/* Forzar centrado de todos los contenedores */
+.container,
+div.container,
+section .container,
+.section .container,
+.page-container .container,
+.animated-section .container,
+.home .container,
+main .container,
+.main-content .container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  max-width: 1200px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  text-align: left !important;
+}
+
+/* Forzar centrado de todos los títulos de sección */
+.section-title,
+h1.section-title,
+h2.section-title,
+h3.section-title,
+.section h2,
+.section h1,
+.section h3,
+.animated-section .section-title,
+.animated-section h2.section-title,
+.animated-section h1.section-title,
+.animated-section h3.section-title,
+.home .section-title,
+.home h2.section-title,
+.container .section-title,
+.container h2.section-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+}
+
+/* Centrar el ::after de los títulos */
+.section-title::after,
+h1.section-title::after,
+h2.section-title::after,
+h3.section-title::after,
+.animated-section .section-title::after,
+.home .section-title::after,
+.container .section-title::after {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Asegurar que las secciones estén centradas */
+.section,
+.animated-section.section,
+.home .section {
+  width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Asegurar que AnimatedSection no afecte el centrado */
+.animated-section {
+  width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+/* Centrar todos los grids dentro de secciones */
+.section [class*="-grid"],
+.animated-section [class*="-grid"],
+.home [class*="-grid"],
+.container [class*="-grid"] {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  justify-content: center !important;
+  justify-items: center !important;
+}
+
+/* Centrar título de ubicación específico */
+.ubicacion-section-title,
+h2.ubicacion-section-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+.ubicacion-section-title::after {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+}
+
+/* Centrar subtítulos de sección */
+.section-subtitle,
+p.section-subtitle,
+.home .section-subtitle,
+.animated-section .section-subtitle,
+.container .section-subtitle {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+

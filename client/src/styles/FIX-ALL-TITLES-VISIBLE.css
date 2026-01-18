@@ -1,0 +1,95 @@
+/* FIX CRÍTICO: Asegurar que TODOS los títulos sean visibles en TODAS las páginas */
+
+/* Regla global para TODOS los h1-h6 */
+h1, h2, h3, h4, h5, h6 {
+  position: relative !important;
+  z-index: 1001 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Títulos con clases específicas */
+.section-title,
+.page-title,
+h1.section-title,
+h2.section-title,
+h3.section-title,
+h1.page-title,
+h2.page-title,
+h3.page-title {
+  position: relative !important;
+  z-index: 1001 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Títulos dentro de contenedores */
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6,
+.section h1,
+.section h2,
+.section h3,
+.section h4,
+.section h5,
+.section h6,
+.animated-section h1,
+.animated-section h2,
+.animated-section h3,
+.animated-section h4,
+.animated-section h5,
+.animated-section h6 {
+  position: relative !important;
+  z-index: 1001 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Títulos en main-content */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  position: relative !important;
+  z-index: 1001 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Títulos en páginas específicas */
+.agenda-page h1,
+.agenda-page h2,
+.agenda-page h3,
+.plan-accion-page h1,
+.plan-accion-page h2,
+.plan-accion-page h3,
+.page-content h1,
+.page-content h2,
+.page-content h3 {
+  position: relative !important;
+  z-index: 1001 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,287 @@
+/* Animaciones de entrada para secciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.8);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-10px) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animated-section {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+/* Forzar visibilidad inmediata para secciones hero */
+.animated-section[class*="-hero"],
+section.animated-section[class*="-hero"],
+.animated-section.agenda-hero,
+.animated-section.plan-hero {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* Forzar visibilidad inmediata para TODOS los títulos en secciones hero */
+.animated-section[class*="-hero"] h1,
+.animated-section[class*="-hero"] h2,
+.animated-section[class*="-hero"] h3,
+.animated-section[class*="-hero"] .page-title,
+.animated-section[class*="-hero"] .section-title,
+section.animated-section[class*="-hero"] h1,
+section.animated-section[class*="-hero"] h2,
+section.animated-section[class*="-hero"] h3,
+section.animated-section[class*="-hero"] .page-title,
+section.animated-section[class*="-hero"] .section-title {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+.animated-section.animate-fadeInUp {
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* DESACTIVAR COMPLETAMENTE las animaciones para títulos en TODAS las secciones hero */
+.animated-section.animate-fadeInUp[class*="-hero"] h1,
+.animated-section.animate-fadeInUp[class*="-hero"] h2,
+.animated-section.animate-fadeInUp[class*="-hero"] h3,
+.animated-section.animate-fadeInUp[class*="-hero"] .page-title,
+.animated-section.animate-fadeInUp[class*="-hero"] .section-title,
+.animated-section.animate-fadeInUp.agenda-hero h1,
+.animated-section.animate-fadeInUp.agenda-hero .page-title,
+.animated-section.animate-fadeInUp.plan-hero h1,
+.animated-section.animate-fadeInUp.plan-hero .page-title,
+section.animated-section.animate-fadeInUp[class*="-hero"] h1,
+section.animated-section.animate-fadeInUp[class*="-hero"] h2,
+section.animated-section.animate-fadeInUp[class*="-hero"] h3,
+section.animated-section.animate-fadeInUp[class*="-hero"] .page-title,
+section.animated-section.animate-fadeInUp[class*="-hero"] .section-title {
+  animation: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  animation-delay: 0s !important;
+}
+
+.animated-section.animate-fadeInLeft {
+  animation: fadeInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animated-section.animate-fadeInRight {
+  animation: fadeInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animated-section.animate-scaleIn {
+  animation: scaleIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animated-section.animate-slideUpFade {
+  animation: slideUpFade 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animated-section.animate-bounceIn {
+  animation: bounceIn 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+/* Animaciones para elementos dentro de las secciones */
+.animated-section.animate-fadeInUp .section-title,
+.animated-section.animate-fadeInLeft .section-title,
+.animated-section.animate-fadeInRight .section-title,
+.animated-section.animate-scaleIn .section-title,
+.animated-section.animate-slideUpFade .section-title,
+.animated-section.animate-bounceIn .section-title {
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+/* DESACTIVAR animaciones para títulos en agenda-hero */
+.animated-section.agenda-hero h1,
+.animated-section.agenda-hero .page-title,
+.animated-section.agenda-hero h1.page-title,
+.animated-section.animate-fadeInUp.agenda-hero h1,
+.animated-section.animate-fadeInUp.agenda-hero .page-title,
+.animated-section.animate-fadeInUp.agenda-hero h1.page-title {
+  animation: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  animation-delay: 0s !important;
+}
+
+.animated-section.animate-fadeInUp .anuncio-card,
+.animated-section.animate-fadeInUp .noticia-card,
+.animated-section.animate-fadeInUp .convocatoria-card,
+.animated-section.animate-fadeInUp .gaceta-item,
+.animated-section.animate-fadeInUp .acceso-item,
+.animated-section.animate-fadeInUp .grupo-card {
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+.animated-section.animate-fadeInUp .anuncio-card:nth-child(1),
+.animated-section.animate-fadeInUp .noticia-card:nth-child(1),
+.animated-section.animate-fadeInUp .convocatoria-card:nth-child(1),
+.animated-section.animate-fadeInUp .gaceta-item:nth-child(1),
+.animated-section.animate-fadeInUp .acceso-item:nth-child(1),
+.animated-section.animate-fadeInUp .grupo-card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.animated-section.animate-fadeInUp .anuncio-card:nth-child(2),
+.animated-section.animate-fadeInUp .noticia-card:nth-child(2),
+.animated-section.animate-fadeInUp .convocatoria-card:nth-child(2),
+.animated-section.animate-fadeInUp .gaceta-item:nth-child(2),
+.animated-section.animate-fadeInUp .acceso-item:nth-child(2),
+.animated-section.animate-fadeInUp .grupo-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.animated-section.animate-fadeInUp .anuncio-card:nth-child(3),
+.animated-section.animate-fadeInUp .noticia-card:nth-child(3),
+.animated-section.animate-fadeInUp .convocatoria-card:nth-child(3),
+.animated-section.animate-fadeInUp .gaceta-item:nth-child(3),
+.animated-section.animate-fadeInUp .acceso-item:nth-child(3),
+.animated-section.animate-fadeInUp .grupo-card:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.animated-section.animate-fadeInUp .anuncio-card:nth-child(4),
+.animated-section.animate-fadeInUp .gaceta-item:nth-child(4),
+.animated-section.animate-fadeInUp .acceso-item:nth-child(4),
+.animated-section.animate-fadeInUp .grupo-card:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.animated-section.animate-fadeInUp .gaceta-item:nth-child(5),
+.animated-section.animate-fadeInUp .acceso-item:nth-child(5),
+.animated-section.animate-fadeInUp .grupo-card:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+.animated-section.animate-fadeInUp .gaceta-item:nth-child(6),
+.animated-section.animate-fadeInUp .acceso-item:nth-child(6),
+.animated-section.animate-fadeInUp .grupo-card:nth-child(6) {
+  animation-delay: 0.8s;
+}
+
+.animated-section.animate-fadeInUp .gaceta-item:nth-child(7),
+.animated-section.animate-fadeInUp .acceso-item:nth-child(7) {
+  animation-delay: 0.9s;
+}
+
+/* Efecto de brillo cuando la sección entra en viewport */
+.animated-section.animate-fadeInUp::before,
+.animated-section.animate-fadeInLeft::before,
+.animated-section.animate-fadeInRight::before,
+.animated-section.animate-scaleIn::before,
+.animated-section.animate-slideUpFade::before,
+.animated-section.animate-bounceIn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(192, 192, 192, 0.5), transparent);
+  animation: sectionShine 1.5s ease-in-out forwards;
+  pointer-events: none !important;
+  z-index: -1 !important;
+  opacity: 0 !important;
+  display: none !important;
+}
+
+@keyframes sectionShine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

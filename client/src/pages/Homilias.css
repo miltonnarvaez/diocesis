@@ -1,0 +1,134 @@
+.homilias-page {
+  padding: 2rem 0;
+  min-height: 60vh;
+}
+
+.homilias-page .page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.homilias-page .page-header h1 {
+  color: #2E5C8A;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.filtros-busqueda {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.busqueda-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.filtro-select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  min-width: 200px;
+}
+
+.homilias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.homilia-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.homilia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.destacada-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #D4AF37;
+  font-size: 1.2rem;
+}
+
+.homilia-header {
+  margin-bottom: 1rem;
+}
+
+.homilia-header h3 {
+  color: #2E5C8A;
+  margin-bottom: 0.5rem;
+  margin-right: 2rem;
+}
+
+.homilia-autor {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.homilia-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.homilia-tema {
+  background: #f0f0f0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+}
+
+.homilia-evangelio {
+  background: #f8f9fa;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.homilia-preview {
+  color: #666;
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.loading,
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .homilias-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filtros-busqueda {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,369 @@
+/* Importar fuentes elegantes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
+
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colores principales - Azul y Dorado de la Diócesis de Ipiales */
+  --color-primary: #4A90E2;
+  --color-primary-dark: #2E5C8A;
+  --color-primary-light: #87CEEB;
+  --color-secondary: #D4AF37;
+  
+  /* Color azul destacado para textos */
+  --color-accent: #4A90E2;
+  --color-accent-light: #87CEEB;
+  --color-accent-dark: #2E5C8A;
+  
+  /* Colores dorados elegantes - Oro viejo */
+  --color-gold: #D4AF37;
+  --color-gold-light: #E8C76A;
+  --color-gold-dark: #B8941E;
+  
+  /* Paleta de grises y plateados */
+  --color-silver: #c0c0c0;
+  --color-silver-light: #e8e8e8;
+  --color-silver-dark: #a0a0a0;
+  --color-gray: #6c757d;
+  --color-gray-light: #adb5bd;
+  --color-gray-dark: #495057;
+  --color-platinum: #e5e4e2;
+  --color-platinum-light: #f5f5f5;
+  --color-platinum-dark: #d3d3d3;
+  
+  /* Colores de texto */
+  --color-text: #2c2c2c;
+  --color-text-light: #555555;
+  --color-text-lighter: #888888;
+  --color-text-secondary: #666666;
+  
+  /* Colores de fondo */
+  --color-bg: #ffffff;
+  --color-bg-light: #f8f9fa;
+  --color-bg-gray: #f5f5f5;
+  
+  /* Bordes */
+  --color-border: #dee2e6;
+  --color-border-light: #e9ecef;
+  
+  /* Fuentes elegantes eclesiásticas */
+  --font-primary: 'Crimson Text', 'Georgia', 'Times New Roman', serif;
+  --font-headings: 'Playfair Display', 'Georgia', serif;
+  --font-size-base: 18px;
+  --line-height-base: 1.8;
+  
+  /* Espaciado */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  
+  /* Otros */
+  --border-radius: 4px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --box-shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Tipografía */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary-dark);
+  letter-spacing: -0.01em;
+}
+
+/* Títulos en secciones con fondo azul (header/footer) mantienen el blanco */
+.header h1,
+.header h2,
+.header h3,
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4 {
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-accent-dark);
+  text-decoration: underline;
+}
+
+/* Enlaces en header y footer mantienen el estilo original */
+.header a,
+.footer a {
+  color: inherit;
+}
+
+.header a:hover,
+.footer a:hover {
+  color: inherit;
+}
+
+/* Contenedor principal */
+.container,
+div.container,
+section .container,
+.section .container,
+.animated-section .container,
+.home .container,
+main .container,
+.main-content .container {
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 var(--spacing-md) !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  display: block !important;
+  position: relative !important;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  background: var(--color-primary);
+  color: white;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.25);
+  font-family: var(--font-primary);
+  letter-spacing: 0.025em;
+}
+
+.btn:hover {
+  background: var(--color-primary-dark);
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.35);
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--color-accent);
+  font-weight: 600;
+  border: 2px solid var(--color-gold);
+}
+
+.btn-secondary:hover {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-gold);
+}
+
+.btn-hero-primary {
+  background: var(--color-primary);
+  color: white;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: 2px solid var(--color-gold);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.btn-hero-primary:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-gold-dark);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(74, 144, 226, 0.4);
+}
+
+.btn-success {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+}
+
+.btn-success:hover {
+  background: var(--color-primary-dark);
+  color: white;
+}
+
+.btn-hero-secondary {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: var(--color-primary);
+  border: 2px solid var(--color-gold);
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-hero-secondary:hover {
+  background-color: white;
+  border-color: white;
+  color: var(--color-primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Utilidades */
+.text-center {
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  padding: var(--spacing-xl);
+  color: var(--color-text-light);
+}
+
+/* Secciones */
+.section {
+  padding: var(--spacing-lg) 0;
+}
+
+.section-title,
+h2.section-title,
+h1.section-title,
+h3.section-title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.page-title,
+h1.page-title,
+h2.page-title,
+h3.page-title {
+  font-family: var(--font-headings);
+  font-size: 2.5rem;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: var(--spacing-lg);
+  color: #000000 !important;
+  position: relative !important;
+  padding-bottom: var(--spacing-sm);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  width: 100% !important;
+  display: block !important;
+  box-sizing: border-box;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 1001 !important;
+}
+
+.section-title::after,
+h2.section-title::after,
+h1.section-title::after,
+h3.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+  width: 80px;
+  height: 3px;
+  background: var(--color-gold);
+}
+
+/* Grids */
+.grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 14px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  .section {
+    padding: var(--spacing-lg) 0;
+  }
+}

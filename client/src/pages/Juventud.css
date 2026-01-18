@@ -1,0 +1,98 @@
+.juventud-page {
+  padding: 2rem 0;
+  min-height: 80vh;
+}
+
+.juventud-page .page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.juventud-page .page-header h1 {
+  font-size: 2.5rem;
+  color: #2E5C8A;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.filtros-section {
+  margin-bottom: 2rem;
+}
+
+.filtros-section select {
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.juventud-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.actividades-section,
+.grupos-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actividades-section h2,
+.grupos-section h2 {
+  color: #2E5C8A;
+  margin-bottom: 1.5rem;
+}
+
+.actividades-grid,
+.grupos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.actividad-card,
+.grupo-card {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.actividad-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.actividad-content,
+.grupo-card {
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .actividades-grid,
+  .grupos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

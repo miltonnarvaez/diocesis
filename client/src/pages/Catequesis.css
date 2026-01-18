@@ -1,0 +1,115 @@
+.catequesis-page {
+  padding: 2rem 0;
+  min-height: 60vh;
+}
+
+.catequesis-page .page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.catequesis-page .page-header h1 {
+  color: #2E5C8A;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.filtros-busqueda {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.busqueda-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.filtro-select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  min-width: 200px;
+}
+
+.materiales-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.material-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.material-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.material-icon {
+  font-size: 3rem;
+  color: #2E5C8A;
+  margin-bottom: 1rem;
+}
+
+.material-card h3 {
+  color: #2E5C8A;
+  margin-bottom: 1rem;
+}
+
+.material-descripcion {
+  color: #666;
+  margin: 1rem 0;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.badge {
+  display: inline-block;
+  background: #2E5C8A;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.material-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.loading,
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .materiales-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filtros-busqueda {
+    flex-direction: column;
+  }
+}

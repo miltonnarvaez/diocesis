@@ -1,0 +1,120 @@
+.homilia-detalle-page {
+  padding: 2rem 0;
+  min-height: 60vh;
+}
+
+.homilia-detalle {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.homilia-header {
+  border-bottom: 2px solid #2E5C8A;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.homilia-header h1 {
+  color: #2E5C8A;
+  margin-bottom: 1rem;
+}
+
+.homilia-meta {
+  display: flex;
+  gap: 2rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.homilia-lecturas {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.homilia-lecturas h2 {
+  color: #2E5C8A;
+  margin-bottom: 1rem;
+}
+
+.lectura {
+  margin-bottom: 1rem;
+}
+
+.lectura h3 {
+  color: #2E5C8A;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.lectura p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.homilia-contenido {
+  margin-bottom: 2rem;
+}
+
+.homilia-contenido h2 {
+  color: #2E5C8A;
+  margin-bottom: 1rem;
+}
+
+.homilia-contenido div {
+  color: #333;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.homilia-audio,
+.homilia-video {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #ddd;
+}
+
+.homilia-audio h3,
+.homilia-video h3 {
+  color: #2E5C8A;
+  margin-bottom: 1rem;
+}
+
+.audio-player {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.video-iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 8px;
+}
+
+.loading,
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .homilia-detalle {
+    padding: 1.5rem;
+  }
+  
+  .homilia-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .video-iframe {
+    height: 250px;
+  }
+}

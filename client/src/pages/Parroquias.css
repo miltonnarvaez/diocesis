@@ -1,0 +1,182 @@
+.parroquias-page {
+  padding: 2rem 0;
+}
+
+.parroquias-filters {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4A90E2;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  background: #f8f9fa;
+  color: #2E5C8A;
+  border: 2px solid #e9ecef;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover {
+  background: #e9ecef;
+  border-color: #4A90E2;
+}
+
+.filter-btn.active {
+  background: #4A90E2;
+  color: white;
+  border-color: #4A90E2;
+}
+
+.parroquias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.parroquia-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 4px solid #4A90E2;
+}
+
+.parroquia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.parroquia-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.parroquia-icon {
+  font-size: 2rem;
+  color: #4A90E2;
+  flex-shrink: 0;
+}
+
+.parroquia-header h2 {
+  flex: 1;
+  margin: 0;
+  color: #2E5C8A;
+  font-size: 1.3rem;
+}
+
+.zona-badge {
+  background: #D4AF37;
+  color: #2E5C8A;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.parroco {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.parroquia-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.parroquia-info svg {
+  color: #4A90E2;
+  flex-shrink: 0;
+}
+
+.horarios-misa {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.horarios-misa h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2E5C8A;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.horarios-misa ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horarios-misa li {
+  padding: 0.25rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.parroquia-descripcion {
+  margin-top: 1rem;
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .parroquias-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

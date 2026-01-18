@@ -1,0 +1,111 @@
+/* Estilos comunes para todas las páginas admin */
+.admin-content-wrapper {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Asegurar que las páginas admin tengan fondo consistente */
+.admin-noticias,
+.admin-convocatorias,
+.admin-gaceta,
+.admin-transparencia,
+.admin-sesiones,
+.admin-autoridades,
+.admin-configuracion,
+.admin-usuarios,
+.admin-pqrsd,
+.admin-encuestas {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Estilos para estados de carga y error consistentes */
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #6c757d;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.error-message {
+  text-align: center;
+  padding: 3rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+  border: 1px solid #e0e0e0;
+}
+
+.error-message h2 {
+  color: #dc3545;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.error-message p {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.error-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Estilos globales para botones admin */
+.btn-success {
+  background: #4A90E2;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.btn-success:hover {
+  background: #3A7BC8;
+  color: #fff;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btn-sm.btn-success {
+  background: #4A90E2;
+  color: #fff;
+}
+
+.btn-sm.btn-success:hover {
+  background: #3A7BC8;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

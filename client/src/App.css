@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 0 !important;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Estilos de accesibilidad mejorados */
+
+/* Alto Contraste */
+body.high-contrast {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+body.high-contrast * {
+  border-color: #ffff00 !important;
+}
+
+body.high-contrast a {
+  color: #ffff00 !important;
+  text-decoration: underline !important;
+}
+
+body.high-contrast a:hover,
+body.high-contrast a:focus {
+  color: #000 !important;
+  background: #ffff00 !important;
+  outline: 2px solid #ffff00 !important;
+  outline-offset: 2px !important;
+}
+
+body.high-contrast button,
+body.high-contrast .btn {
+  background: #000 !important;
+  color: #ffff00 !important;
+  border: 2px solid #ffff00 !important;
+}
+
+body.high-contrast button:hover,
+body.high-contrast .btn:hover {
+  background: #ffff00 !important;
+  color: #000 !important;
+}
+
+body.high-contrast input,
+body.high-contrast textarea,
+body.high-contrast select {
+  background: #000 !important;
+  color: #fff !important;
+  border: 2px solid #ffff00 !important;
+}
+
+body.high-contrast input:focus,
+body.high-contrast textarea:focus,
+body.high-contrast select:focus {
+  outline: 3px solid #ffff00 !important;
+  outline-offset: 2px !important;
+}
+
+/* Alto contraste - Header y menú */
+body.high-contrast .header {
+  background: #000 !important;
+  border-bottom: 3px solid #ffff00 !important;
+}
+
+body.high-contrast .header-top-bar {
+  background: #000 !important;
+  border-bottom: 2px solid #ffff00 !important;
+}
+
+body.high-contrast .header-nav {
+  background: #000 !important;
+  border-top: 2px solid #ffff00 !important;
+  border-bottom: 2px solid #ffff00 !important;
+}
+
+body.high-contrast .nav-link {
+  color: #ffff00 !important;
+  background: #000 !important;
+  border: 1px solid transparent !important;
+}
+
+body.high-contrast .nav-link:hover,
+body.high-contrast .nav-link:focus,
+body.high-contrast .nav-item.active .nav-link {
+  color: #000 !important;
+  background: #ffff00 !important;
+  border-color: #ffff00 !important;
+  outline: 2px solid #ffff00 !important;
+}
+
+body.high-contrast .nav-submenu,
+body.high-contrast .mega-menu {
+  background: #000 !important;
+  border: 3px solid #ffff00 !important;
+}
+
+body.high-contrast .nav-sublink {
+  color: #ffff00 !important;
+  background: #000 !important;
+  border-bottom: 1px solid #ffff00 !important;
+}
+
+body.high-contrast .nav-sublink:hover,
+body.high-contrast .nav-sublink:focus {
+  color: #000 !important;
+  background: #ffff00 !important;
+}
+
+body.high-contrast .top-bar-phone,
+body.high-contrast .top-bar-email,
+body.high-contrast .gov-co-logo {
+  color: #ffff00 !important;
+}
+
+body.high-contrast .section-title,
+body.high-contrast h1,
+body.high-contrast h2,
+body.high-contrast h3,
+body.high-contrast h4,
+body.high-contrast h5,
+body.high-contrast h6 {
+  color: #ffff00 !important;
+}
+
+body.high-contrast .card,
+body.high-contrast .estadistica-card,
+body.high-contrast .anuncio-card {
+  background: #000 !important;
+  border: 2px solid #ffff00 !important;
+  color: #fff !important;
+}
+
+body.high-contrast .footer {
+  background: #000 !important;
+  border-top: 3px solid #ffff00 !important;
+  color: #fff !important;
+}
+
+body.high-contrast .footer a {
+  color: #ffff00 !important;
+}
+
+/* Fuente legible */
+body.readable-font {
+  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1.7 !important;
+}
+
+body.readable-font h1,
+body.readable-font h2,
+body.readable-font h3,
+body.readable-font h4,
+body.readable-font h5,
+body.readable-font h6 {
+  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* Subrayar enlaces */
+body.underline-links a {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 3px !important;
+}
+
+body.underline-links a:hover,
+body.underline-links a:focus {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+}
+
+/* Mejoras de tamaño de fuente (ya aplicado dinámicamente) */
+body[style*="font-size"] {
+  transition: font-size 0.3s ease !important;
+}
+
+/* Solo aplicar a elementos de texto, no a iconos, imágenes o SVG */
+body[style*="font-size"] p,
+body[style*="font-size"] span,
+body[style*="font-size"] div,
+body[style*="font-size"] li,
+body[style*="font-size"] td,
+body[style*="font-size"] th,
+body[style*="font-size"] label,
+body[style*="font-size"] input,
+body[style*="font-size"] textarea,
+body[style*="font-size"] select,
+body[style*="font-size"] a {
+  font-size: inherit !important;
+}
+
+/* Excluir iconos, imágenes y SVG del escalado */
+body[style*="font-size"] svg,
+body[style*="font-size"] img,
+body[style*="font-size"] .icon,
+body[style*="font-size"] [class*="icon"],
+body[style*="font-size"] [class*="Icon"],
+body[style*="font-size"] i[class*="fa"],
+body[style*="font-size"] .react-icons {
+  font-size: initial !important;
+  width: initial !important;
+  height: initial !important;
+}
+
+body[style*="font-size"] h1 {
+  font-size: calc(1em * 2.5) !important;
+}
+
+body[style*="font-size"] h2 {
+  font-size: calc(1em * 2) !important;
+}
+
+body[style*="font-size"] h3 {
+  font-size: calc(1em * 1.75) !important;
+}
+
+body[style*="font-size"] h4 {
+  font-size: calc(1em * 1.5) !important;
+}
+
+body[style*="font-size"] button,
+body[style*="font-size"] .btn {
+  font-size: calc(1em * 1.1) !important;
+  padding: calc(0.75em * 1.1) calc(1.5em * 1.1) !important;
+}
+
+body[style*="font-size"] button svg,
+body[style*="font-size"] .btn svg,
+body[style*="font-size"] button i,
+body[style*="font-size"] .btn i {
+  font-size: initial !important;
+  width: 1em !important;
+  height: 1em !important;
+}
+
+/* Mejoras de foco para accesibilidad */
+*:focus-visible {
+  outline: 3px solid #4A90E2 !important;
+  outline-offset: 2px !important;
+}
+
+body.high-contrast *:focus-visible {
+  outline: 3px solid #ffff00 !important;
+  outline-offset: 3px !important;
+}

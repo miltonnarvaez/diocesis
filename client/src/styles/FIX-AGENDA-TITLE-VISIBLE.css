@@ -1,0 +1,63 @@
+/* FIX CRÍTICO: Hacer visible el título de Agenda Diocesana */
+
+/* Desactivar TODAS las animaciones para agenda-hero */
+section.agenda-hero,
+.animated-section.agenda-hero,
+section.animated-section.agenda-hero,
+.animated-section.animate-fadeInUp.agenda-hero,
+section.animated-section.animate-fadeInUp.agenda-hero {
+  padding-top: 200px !important;
+  margin-top: 0 !important;
+  overflow: visible !important;
+}
+
+/* Forzar visibilidad del título */
+section.agenda-hero h1,
+section.agenda-hero .page-title,
+section.agenda-hero h1.page-title,
+.animated-section.agenda-hero h1,
+.animated-section.agenda-hero .page-title,
+.animated-section.agenda-hero h1.page-title,
+.animated-section.animate-fadeInUp.agenda-hero h1,
+.animated-section.animate-fadeInUp.agenda-hero .page-title,
+.animated-section.animate-fadeInUp.agenda-hero h1.page-title,
+section.animated-section.agenda-hero h1,
+section.animated-section.agenda-hero .page-title,
+section.animated-section.agenda-hero h1.page-title,
+section.animated-section.animate-fadeInUp.agenda-hero h1,
+section.animated-section.animate-fadeInUp.agenda-hero .page-title,
+section.animated-section.animate-fadeInUp.agenda-hero h1.page-title,
+.agenda-hero .container h1,
+.agenda-hero .container .page-title,
+.agenda-hero .container h1.page-title,
+section.agenda-hero .container h1,
+section.agenda-hero .container .page-title,
+section.agenda-hero .container h1.page-title {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 1001 !important;
+  color: #ffffff !important;
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  margin: 0 auto 1rem auto !important;
+  padding: 0 !important;
+  width: 100% !important;
+  animation: none !important;
+  transform: none !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+

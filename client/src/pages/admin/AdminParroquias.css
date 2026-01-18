@@ -1,0 +1,295 @@
+.admin-parroquias {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.admin-parroquias .admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.admin-parroquias .admin-header h1 {
+  color: #333;
+  font-size: 2rem;
+}
+
+.admin-parroquias .admin-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.admin-parroquias .search-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.admin-parroquias .filter-select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+}
+
+.admin-parroquias .admin-table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.admin-parroquias .admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-parroquias .admin-table thead {
+  background: #f8f9fa;
+}
+
+.admin-parroquias .admin-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.admin-parroquias .admin-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.admin-parroquias .admin-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.admin-parroquias .badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.admin-parroquias .badge-primary {
+  background: #007bff;
+  color: white;
+}
+
+.admin-parroquias .badge-success {
+  background: #28a745;
+  color: white;
+}
+
+.admin-parroquias .badge-danger {
+  background: #dc3545;
+  color: white;
+}
+
+.admin-parroquias .horarios-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.admin-parroquias .horario-item {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.admin-parroquias .more-horarios {
+  font-size: 0.75rem;
+  color: #999;
+  font-style: italic;
+}
+
+.admin-parroquias .text-muted {
+  color: #999;
+}
+
+.admin-parroquias .action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.admin-parroquias .btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.admin-parroquias .btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.admin-parroquias .btn-primary:hover {
+  background: #0056b3;
+}
+
+.admin-parroquias .btn-info {
+  background: #17a2b8;
+  color: white;
+}
+
+.admin-parroquias .btn-info:hover {
+  background: #138496;
+}
+
+.admin-parroquias .btn-danger {
+  background: #dc3545;
+  color: white;
+}
+
+.admin-parroquias .btn-danger:hover {
+  background: #c82333;
+}
+
+.admin-parroquias .btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.admin-parroquias .btn-secondary:hover {
+  background: #5a6268;
+}
+
+.admin-parroquias .btn-sm {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8125rem;
+}
+
+.admin-parroquias .admin-form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.admin-parroquias .admin-form-content {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.admin-parroquias .admin-form-content h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.admin-parroquias .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-parroquias .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-parroquias .form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.admin-parroquias .form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.admin-parroquias .form-group input,
+.admin-parroquias .form-group select,
+.admin-parroquias .form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.admin-parroquias .form-group textarea {
+  resize: vertical;
+}
+
+.admin-parroquias .form-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.admin-parroquias .image-preview {
+  margin-top: 1rem;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.admin-parroquias .form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .admin-parroquias .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .admin-parroquias .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .admin-parroquias .admin-filters {
+    flex-direction: column;
+  }
+  
+  .admin-parroquias .action-buttons {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

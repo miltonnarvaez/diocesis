@@ -1,0 +1,157 @@
+/* FIX ESPECÍFICO PARA ENLACES-INTERES - Corregir centrado de la sección y título */
+
+.enlaces-interes,
+.section.enlaces-interes,
+.animated-section.enlaces-interes,
+.home .enlaces-interes {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  position: relative !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+}
+
+.enlaces-interes .container,
+.enlaces-interes .section .container,
+.animated-section.enlaces-interes .container,
+section.animated-section.enlaces-interes .container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1200px !important;
+  width: 100% !important;
+  padding-left: var(--spacing-md) !important;
+  padding-right: var(--spacing-md) !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  transform: none !important;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+}
+
+/* Asegurar que el enlaces-grid dentro del container no tenga padding adicional */
+.enlaces-interes .container .enlaces-grid,
+section.animated-section.enlaces-interes .container .enlaces-grid {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: var(--spacing-lg) !important;
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  transform: none !important;
+  translate: none !important;
+  inset: auto 0 auto 0 !important;
+}
+
+.enlaces-interes .section-title,
+.enlaces-interes h2.section-title,
+.enlaces-interes .container .section-title,
+.enlaces-interes .container h2.section-title,
+.animated-section.enlaces-interes .section-title,
+.animated-section.enlaces-interes h2.section-title,
+section.animated-section.enlaces-interes .section-title,
+section.animated-section.enlaces-interes h2.section-title,
+section.animated-section.enlaces-interes .container .section-title,
+section.animated-section.enlaces-interes .container h2.section-title {
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  position: relative !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+.enlaces-interes .section-title::after,
+.enlaces-interes h2.section-title::after,
+.animated-section.enlaces-interes .section-title::after,
+.animated-section.enlaces-interes h2.section-title::after,
+section.animated-section.enlaces-interes .section-title::after,
+section.animated-section.enlaces-interes h2.section-title::after {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* REGLAS ULTRA ESPECÍFICAS - Máxima prioridad para enlaces-interes */
+section.animated-section.enlaces-interes .container h2.section-title,
+section.animated-section.animate-bounceIn.enlaces-interes .container h2.section-title {
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  position: relative !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+/* FIX ESPECÍFICO PARA enlaces-grid - Eliminar scroll y desplazamiento */
+.enlaces-grid,
+.enlaces-interes .enlaces-grid,
+.enlaces-interes .container .enlaces-grid,
+section.animated-section.enlaces-interes .container .enlaces-grid,
+section.animated-section.animate-bounceIn.enlaces-interes .container .enlaces-grid,
+div.enlaces-grid,
+div.container .enlaces-grid,
+div#root > div.App > main.main-content > div.home > section.animated-section.enlaces-interes > div.container > div.enlaces-grid {
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  overflow: hidden visible !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: auto !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  margin-top: var(--spacing-lg) !important;
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  position: relative !important;
+  transform: none !important;
+  translate: none !important;
+  inset: auto 0 auto 0 !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
+

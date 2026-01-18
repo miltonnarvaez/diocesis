@@ -1,0 +1,118 @@
+.language-selector {
+  position: relative;
+  z-index: 10000;
+  isolation: isolate;
+  flex-shrink: 0;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border: 1px solid #4A90E2;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #2E5C8A;
+  transition: all 0.3s;
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-width: fit-content;
+  position: relative;
+  z-index: 10000;
+}
+
+.language-button:hover {
+  background: #f8f9fa;
+  border-color: #2E5C8A;
+}
+
+.language-flag {
+  font-size: 1.2rem;
+}
+
+.language-code {
+  font-weight: 600;
+}
+
+.language-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.3s;
+}
+
+.language-selector:has(.language-button:focus) .language-arrow,
+.language-button:hover .language-arrow {
+  transform: rotate(180deg);
+}
+
+.language-dropdown {
+  position: fixed;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  z-index: 10001;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #2E5C8A;
+  transition: background-color 0.3s;
+  position: relative;
+  z-index: 10002;
+}
+
+.language-flag {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.language-country-code {
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: baseline;
+  min-width: 2rem;
+}
+
+.language-name {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.language-option:last-child {
+  border-bottom: none;
+}
+
+.language-option:hover {
+  background: #f8f9fa;
+}
+
+.language-option.active {
+  background: #e7f3e7;
+  font-weight: 600;
+}
+
+

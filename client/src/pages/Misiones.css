@@ -1,0 +1,106 @@
+.misiones-page {
+  padding: 2rem 0;
+  min-height: 80vh;
+}
+
+.misiones-page .page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.misiones-page .page-header h1 {
+  font-size: 2.5rem;
+  color: #2E5C8A;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.filtros-section {
+  margin-bottom: 2rem;
+}
+
+.filtros-section select {
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.misiones-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.misiones-section,
+.misioneros-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.misiones-section h2,
+.misioneros-section h2 {
+  color: #2E5C8A;
+  margin-bottom: 1.5rem;
+}
+
+.misiones-grid,
+.misioneros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.mision-card,
+.misionero-card {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mision-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.mision-content,
+.misionero-card {
+  padding: 1.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .misiones-grid,
+  .misioneros-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

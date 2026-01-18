@@ -1,0 +1,260 @@
+/* Asegurar que TODOS los títulos de sección sean visibles en TODAS las páginas */
+
+/* Reglas generales para TODOS los elementos h1-h6 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title,
+h1.section-title,
+h2.section-title,
+h3.section-title,
+h4.section-title,
+h5.section-title,
+h6.section-title,
+.page-title,
+h1.page-title,
+h2.page-title,
+h3.page-title,
+h4.page-title,
+h5.page-title,
+h6.page-title,
+.section .section-title,
+.section h1.section-title,
+.section h2.section-title,
+.section h3.section-title,
+.section .page-title,
+.section h1.page-title,
+.section h2.page-title,
+.section h3.page-title,
+.animated-section .section-title,
+.animated-section h1.section-title,
+.animated-section h2.section-title,
+.animated-section h3.section-title,
+.animated-section .page-title,
+.animated-section h1.page-title,
+.animated-section h2.page-title,
+.animated-section h3.page-title,
+.container .section-title,
+.container h1.section-title,
+.container h2.section-title,
+.container h3.section-title,
+.container .page-title,
+.container h1.page-title,
+.container h2.page-title,
+.container h3.page-title,
+.home .section-title,
+.home h1.section-title,
+.home h2.section-title,
+.home h3.section-title,
+.anuncios .section-title,
+.gaceta .section-title,
+.enlaces-interes .section-title,
+.grupos-interes .section-title,
+.contacto .section-title,
+.noticias-home .section-title,
+.convocatorias-home .section-title,
+.estadisticas-section .section-title,
+.acceso-rapido .section-title,
+.contacto-ubicacion .section-title,
+.agenda-hero .page-title,
+.agenda-hero h1.page-title,
+.plan-hero .page-title,
+.plan-hero h1.page-title {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+  position: relative !important;
+  z-index: 1000000 !important;
+  overflow: visible !important;
+  clip: auto !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  height: auto !important;
+  min-height: auto !important;
+  max-height: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+/* Asegurar que los contenedores de títulos no oculten el contenido */
+.section,
+.animated-section,
+section.animated-section,
+section.section {
+  position: relative !important;
+}
+
+/* Asegurar que los títulos dentro de contenedores sean visibles */
+.container .section-title,
+.section .section-title,
+.animated-section .section-title {
+  overflow: visible !important;
+  clip: auto !important;
+  clip-path: none !important;
+}
+
+/* Asegurar que los títulos no queden detrás de otros elementos - z-index más alto que el header */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title,
+h1.section-title,
+h2.section-title,
+h3.section-title,
+.page-title,
+h1.page-title,
+h2.page-title,
+h3.page-title {
+  z-index: 1000000 !important;
+  position: relative !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Asegurar visibilidad en todas las páginas específicas */
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6,
+.page-content .section-title,
+.page-content h1.section-title,
+.page-content h2.section-title,
+.page-content h3.section-title,
+.page-content .page-title,
+.page-content h1.page-title,
+.page-content h2.page-title,
+.page-content h3.page-title,
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6,
+.main-content .section-title,
+.main-content h1.section-title,
+.main-content h2.section-title,
+.main-content h3.section-title,
+.main-content .page-title,
+.main-content h1.page-title,
+.main-content h2.page-title,
+.main-content h3.page-title {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+  position: relative !important;
+  z-index: 1000000 !important;
+}
+
+/* Asegurar que las secciones tengan suficiente espacio superior para no quedar tapadas por el header */
+.section,
+.animated-section,
+section.animated-section,
+section.section {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Asegurar que los contenedores de secciones no oculten los títulos */
+.container {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Asegurar que los títulos dentro de contenedores tengan z-index alto */
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6,
+.container .section-title,
+.section .section-title,
+.animated-section .section-title,
+.container .page-title,
+.section .page-title,
+.animated-section .page-title,
+.section h1,
+.section h2,
+.section h3,
+.section h4,
+.section h5,
+.section h6,
+.animated-section h1,
+.animated-section h2,
+.animated-section h3,
+.animated-section h4,
+.animated-section h5,
+.animated-section h6 {
+  position: relative !important;
+  z-index: 1000000 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Asegurar que el contenido principal tenga suficiente espacio para no quedar tapado por el header */
+.main-content {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Asegurar que todas las páginas tengan suficiente padding-top para el header */
+.agenda-page,
+.plan-accion-page,
+.page-container,
+.page-content {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Reglas específicas para títulos dentro de secciones animadas */
+.animated-section h1,
+.animated-section h2,
+.animated-section h3,
+.animated-section h4,
+.animated-section h5,
+.animated-section h6,
+section.animated-section h1,
+section.animated-section h2,
+section.animated-section h3,
+section.animated-section h4,
+section.animated-section h5,
+section.animated-section h6 {
+  position: relative !important;
+  z-index: 1000000 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Reglas para títulos en contenedores dentro de secciones */
+.section .container h1,
+.section .container h2,
+.section .container h3,
+.section .container h4,
+.section .container h5,
+.section .container h6,
+.animated-section .container h1,
+.animated-section .container h2,
+.animated-section .container h3,
+.animated-section .container h4,
+.animated-section .container h5,
+.animated-section .container h6 {
+  position: relative !important;
+  z-index: 1000000 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+

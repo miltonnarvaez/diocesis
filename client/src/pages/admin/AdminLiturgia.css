@@ -1,0 +1,126 @@
+.admin-liturgia {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.admin-liturgia .admin-header {
+  margin-bottom: 2rem;
+}
+
+.admin-liturgia .admin-header h1 {
+  color: #333;
+  font-size: 2rem;
+}
+
+.admin-liturgia .fecha-selector-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.admin-liturgia .fecha-selector-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-liturgia .date-input {
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.admin-liturgia .admin-form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-liturgia .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-liturgia .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-liturgia .form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.admin-liturgia .form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.admin-liturgia .form-group input,
+.admin-liturgia .form-group select,
+.admin-liturgia .form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.admin-liturgia .form-group textarea {
+  resize: vertical;
+}
+
+.admin-liturgia .form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.admin-liturgia .btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.admin-liturgia .btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.admin-liturgia .btn-primary:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .admin-liturgia .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

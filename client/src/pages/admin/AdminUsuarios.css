@@ -1,0 +1,289 @@
+.admin-usuarios {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.admin-header {
+  background: linear-gradient(135deg, #2E5C8A 0%, #4A90E2 100%);
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.admin-header h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+}
+
+.admin-content {
+  padding: 3rem 0;
+}
+
+.admin-actions {
+  margin-bottom: 2rem;
+}
+
+.admin-form-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.admin-form h2 {
+  color: #2E5C8A;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.permisos-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e9ecef;
+}
+
+.transparencia-categorias-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 3px solid #4A90E2;
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.transparencia-categorias-section h3 {
+  color: #2E5C8A;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.section-description {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.transparencia-modulo {
+  background: #fff;
+  border: 2px solid #e9ecef;
+}
+
+.transparencia-modulo h4 {
+  color: #2E5C8A;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.modulo-descripcion {
+  display: block;
+  color: #6c757d;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.permisos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.permiso-modulo {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.permiso-modulo h4 {
+  color: #2E5C8A;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.permiso-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.permiso-acciones label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.permiso-acciones input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e9ecef;
+}
+
+.usuarios-list {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.usuarios-list h2 {
+  color: #2E5C8A;
+  margin-bottom: 1.5rem;
+}
+
+.usuarios-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.usuarios-table thead {
+  background: #f8f9fa;
+}
+
+.usuarios-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #2E5C8A;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.usuarios-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.usuarios-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.rol-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.rol-admin {
+  background: #dc3545;
+  color: #fff;
+}
+
+.rol-editor {
+  background: #ffc107;
+  color: #2E5C8A;
+}
+
+.rol-usuario {
+  background: #6c757d;
+  color: #fff;
+}
+
+.status-active {
+  color: #4A90E2;
+  font-weight: 600;
+}
+
+.status-inactive {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.permisos-all {
+  color: #4A90E2;
+  font-weight: 600;
+}
+
+.permisos-count {
+  color: #6c757d;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+}
+
+.btn-edit {
+  background: #ffc107;
+  color: #2E5C8A;
+}
+
+.btn-edit:hover {
+  background: #e0a800;
+}
+
+.btn-delete {
+  background: #dc3545;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background: #c82333;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .permisos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .usuarios-table {
+    font-size: 0.875rem;
+  }
+
+  .usuarios-table th,
+  .usuarios-table td {
+    padding: 0.5rem;
+  }
+}
+

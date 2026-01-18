@@ -1,0 +1,319 @@
+/* SOLUCIÓN ULTIMATE - CENTRADO ABSOLUTO CON FLEXBOX */
+/* Este archivo debe tener MÁXIMA PRIORIDAD - Cargar al final */
+
+/* RESET TOTAL */
+* {
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+#root {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.App {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+/* FORZAR main-content a ocupar todo el ancho y centrar su contenido */
+.main-content {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 1 !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+/* FORZAR que TODOS los contenedores estén centrados usando flexbox */
+.container,
+div.container,
+section .container,
+.section .container,
+.animated-section .container,
+.home .container,
+.home .animated-section .container,
+.home section .container,
+.home .section .container,
+main .container,
+.main-content .container,
+.page-container .container,
+.anuncios .container,
+.gaceta .container,
+.enlaces-interes .container,
+.grupos-interes .container,
+.ubicacion .container,
+.contacto .container,
+.noticias-home .container,
+.convocatorias-home .container,
+.estadisticas-section .container,
+.acceso-rapido .container,
+.agenda-page .container,
+.agenda-hero .container,
+.agenda-filters .container,
+.agenda-calendar-section .container,
+.agenda-list-section .container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1200px !important;
+  width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  padding-left: var(--spacing-md) !important;
+  padding-right: var(--spacing-md) !important;
+  left: 0 !important;
+  right: 0 !important;
+  transform: none !important;
+  translate: none !important;
+}
+
+/* FORZAR que las secciones ocupen todo el ancho y centren su contenido */
+.section,
+.animated-section,
+.home .section,
+.home .animated-section,
+.agenda-page .section,
+.agenda-page .animated-section,
+.agenda-page section.animated-section {
+  width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  position: relative !important;
+  transform: none !important;
+  translate: none !important;
+  inset: auto !important;
+}
+
+/* Asegurar que .home también esté centrado */
+.home {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+/* FORZAR que TODOS los títulos estén centrados */
+.section-title,
+h1.section-title,
+h2.section-title,
+h3.section-title,
+.section h2.section-title,
+.section h1.section-title,
+.section h3.section-title,
+.animated-section .section-title,
+.animated-section h2.section-title,
+.animated-section h1.section-title,
+.animated-section h3.section-title,
+.home .section-title,
+.home h2.section-title,
+.home h1.section-title,
+.home h3.section-title,
+.container .section-title,
+.container h2.section-title,
+.container h1.section-title,
+.container h3.section-title,
+.anuncios .section-title,
+.gaceta .section-title,
+.enlaces-interes .section-title,
+.grupos-interes .section-title,
+.contacto .section-title,
+.noticias-home .section-title,
+.convocatorias-home .section-title,
+.estadisticas-section .section-title,
+.acceso-rapido .section-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+}
+
+/* FORZAR que el ::after de los títulos esté centrado */
+.section-title::after,
+h1.section-title::after,
+h2.section-title::after,
+h3.section-title::after,
+.animated-section .section-title::after,
+.home .section-title::after,
+.container .section-title::after,
+.anuncios .section-title::after,
+.gaceta .section-title::after,
+.enlaces-interes .section-title::after,
+.grupos-interes .section-title::after,
+.contacto .section-title::after,
+.noticias-home .section-title::after,
+.convocatorias-home .section-title::after,
+.estadisticas-section .section-title::after,
+.acceso-rapido .section-title::after {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* FORZAR que los subtítulos estén centrados */
+.section-subtitle,
+p.section-subtitle,
+.home .section-subtitle,
+.animated-section .section-subtitle,
+.container .section-subtitle {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+/* FORZAR que los grids estén centrados */
+[class*="-grid"],
+.section [class*="-grid"],
+.animated-section [class*="-grid"],
+.home [class*="-grid"],
+.container [class*="-grid"],
+.anuncios-grid,
+.gaceta-grid,
+.enlaces-grid,
+.grupos-grid,
+.acceso-grid,
+.noticias-grid,
+.convocatorias-grid,
+.estadisticas-grid {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Título de ubicación */
+.ubicacion-section-title,
+h2.ubicacion-section-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+.ubicacion-section-title::after {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+}
+
+/* REGLAS ULTRA ESPECÍFICAS - MÁXIMA PRIORIDAD */
+.home .animated-section.section .container,
+.home .animated-section .container,
+.home section.animated-section .container,
+section.animated-section.section .container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1200px !important;
+  width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+.home .animated-section.section .container .section-title,
+.home .animated-section .container .section-title,
+.home section.animated-section .container .section-title,
+section.animated-section.section .container .section-title,
+.home .section .container .section-title,
+.home .container .section-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+}
+
+.home .animated-section.section .container .section-title::after,
+.home .animated-section .container .section-title::after,
+.home section.animated-section .container .section-title::after,
+section.animated-section.section .container .section-title::after,
+.home .section .container .section-title::after,
+.home .container .section-title::after {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Forzar que los contenedores no tengan float */
+.container,
+.home .container,
+.animated-section .container,
+.section .container {
+  float: none !important;
+  clear: both !important;
+}
+
+/* MEDIA QUERIES - Asegurar centrado en móviles */
+@media (max-width: 768px) {
+  .container,
+  .home .container,
+  .animated-section .container,
+  .section .container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1200px !important;
+    width: 100% !important;
+    padding-left: var(--spacing-sm) !important;
+    padding-right: var(--spacing-sm) !important;
+  }
+  
+  .section-title,
+  h2.section-title,
+  .home .section-title,
+  .container .section-title {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+

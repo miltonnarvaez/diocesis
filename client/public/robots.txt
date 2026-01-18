@@ -1,0 +1,31 @@
+# robots.txt para Concejo Municipal de Guachucal
+
+User-agent: *
+Allow: /
+
+# Permitir acceso a recursos estáticos
+Allow: /images/
+Allow: /static/
+Allow: /uploads/
+
+# Bloquear acceso a rutas de administración
+Disallow: /admin/
+Disallow: /admin/login
+
+# Bloquear acceso a consultas de PQRSD (privacidad)
+Disallow: /pqrsd/consulta/
+
+# Sitemap
+Sitemap: https://concejo.guachucal.gov.co/sitemap.xml
+
+
+
+
+
+
+
+
+
+
+
+

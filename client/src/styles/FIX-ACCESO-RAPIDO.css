@@ -1,0 +1,121 @@
+/* FIX ESPECÍFICO PARA ACCESO-RAPIDO - Corregir centrado del título */
+
+.acceso-rapido,
+.section.acceso-rapido,
+.animated-section.acceso-rapido,
+.home .acceso-rapido {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  position: relative !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+.acceso-rapido .container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1200px !important;
+  width: 100% !important;
+  padding-left: var(--spacing-md) !important;
+  padding-right: var(--spacing-md) !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  left: 0 !important;
+  right: 0 !important;
+  transform: none !important;
+}
+
+.acceso-rapido .section-title,
+.acceso-rapido h2.section-title,
+.acceso-rapido .container .section-title,
+.acceso-rapido .container h2.section-title,
+.animated-section.acceso-rapido .section-title,
+.animated-section.acceso-rapido h2.section-title {
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  position: relative !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+.acceso-rapido .section-title::after,
+.acceso-rapido h2.section-title::after,
+.animated-section.acceso-rapido .section-title::after,
+.animated-section.acceso-rapido h2.section-title::after {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Asegurar que la sección completa esté centrada */
+.acceso-rapido,
+.section.acceso-rapido,
+.animated-section.acceso-rapido,
+.home .acceso-rapido {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  position: relative !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+.acceso-rapido .container,
+.animated-section.acceso-rapido .container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1200px !important;
+  width: 100% !important;
+  padding-left: var(--spacing-md) !important;
+  padding-right: var(--spacing-md) !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  left: 0 !important;
+  right: 0 !important;
+  transform: none !important;
+}
+
+/* REGLAS ULTRA ESPECÍFICAS - Forzar que el título no tenga ningún desplazamiento */
+.animated-section.acceso-rapido .container .section-title,
+.animated-section.acceso-rapido .container h2.section-title,
+section.animated-section.acceso-rapido .container .section-title,
+section.animated-section.acceso-rapido .container h2.section-title {
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  position: relative !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+
+

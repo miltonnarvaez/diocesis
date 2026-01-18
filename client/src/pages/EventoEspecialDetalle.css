@@ -1,0 +1,127 @@
+.evento-detalle-page {
+  padding: 2rem 0;
+  min-height: 60vh;
+}
+
+.evento-detalle {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.evento-imagen-principal {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.evento-header {
+  padding: 2rem;
+  border-bottom: 2px solid #2E5C8A;
+}
+
+.evento-header h1 {
+  color: #2E5C8A;
+  margin-bottom: 1rem;
+}
+
+.evento-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.evento-descripcion,
+.evento-inscripcion-info {
+  padding: 2rem;
+}
+
+.evento-descripcion h2,
+.evento-inscripcion-info h2 {
+  color: #2E5C8A;
+  margin-bottom: 1rem;
+}
+
+.evento-inscripcion-info p {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.inscripcion-cerrada {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+.inscripcion-form {
+  padding: 2rem;
+  background: #f8f9fa;
+  margin: 2rem;
+  border-radius: 8px;
+}
+
+.inscripcion-form h3 {
+  color: #2E5C8A;
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.loading,
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .evento-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .inscripcion-form {
+    margin: 1rem;
+  }
+}

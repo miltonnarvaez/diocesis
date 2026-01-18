@@ -1,0 +1,146 @@
+/* Modo Oscuro */
+:root.dark-mode {
+  /* Colores principales - ajustados para modo oscuro */
+  --color-primary: #87CEEB;
+  --color-primary-dark: #2E5C8A;
+  --color-primary-light: #B0E0E6;
+  --color-secondary: #f4ff10;
+  
+  /* Colores de texto */
+  --color-text: #e0e0e0;
+  --color-text-light: #b0b0b0;
+  --color-text-lighter: #888888;
+  
+  /* Colores de fondo */
+  --color-bg: #1a1a1a;
+  --color-bg-light: #2a2a2a;
+  --color-bg-gray: #242424;
+  
+  /* Bordes */
+  --color-border: #404040;
+  --color-border-light: #353535;
+  
+  /* Sombras ajustadas */
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --box-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.dark-mode .header {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dark-mode .header-top {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dark-mode .header-top-bar {
+  background-color: var(--color-primary-dark);
+}
+
+.dark-mode .nav-link {
+  color: var(--color-text);
+}
+
+.dark-mode .nav-link:hover {
+  background-color: var(--color-bg-light);
+  color: var(--color-primary-light);
+}
+
+.dark-mode .mega-menu {
+  background-color: var(--color-bg-light);
+  border-color: var(--color-border);
+}
+
+.dark-mode .mega-menu-item {
+  background-color: var(--color-bg-gray);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.dark-mode .mega-menu-item:hover {
+  background-color: var(--color-primary-dark);
+  color: white;
+}
+
+.dark-mode .section {
+  background-color: var(--color-bg);
+}
+
+.dark-mode .page-container {
+  background-color: var(--color-bg);
+}
+
+.dark-mode .card,
+.dark-mode .noticia-card,
+.dark-mode .contacto-card {
+  background-color: var(--color-bg-light);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.dark-mode .btn {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.dark-mode .btn:hover {
+  background-color: var(--color-primary-light);
+}
+
+.dark-mode .btn-secondary {
+  background-color: var(--color-bg-gray);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.dark-mode .footer {
+  background-color: #1a1a1a;
+  border-top: 1px solid var(--color-border);
+}
+
+.dark-mode .form-field-input,
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  background-color: var(--color-bg-gray);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.dark-mode .form-field-input:focus,
+.dark-mode input:focus,
+.dark-mode textarea:focus,
+.dark-mode select:focus {
+  border-color: var(--color-primary);
+  background-color: var(--color-bg-light);
+}
+
+.dark-mode .toast {
+  background-color: var(--color-bg-light);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.dark-mode .breadcrumbs {
+  background-color: var(--color-bg-light);
+}
+
+.dark-mode .breadcrumb-link {
+  color: var(--color-text-light);
+}
+
+.dark-mode .breadcrumb-link:hover {
+  color: var(--color-primary-light);
+}
+
+
+
+
+

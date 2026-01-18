@@ -1,0 +1,271 @@
+.datos-abiertos-page {
+  padding: 2rem 0;
+}
+
+.datos-abiertos-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.datos-abiertos-intro {
+  max-width: 900px;
+  margin: 1.5rem auto 0;
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.datos-abiertos-intro strong {
+  color: #2E5C8A;
+}
+
+.formatos-info {
+  margin-bottom: 4rem;
+}
+
+.formatos-info h2 {
+  color: #2E5C8A;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.formatos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.formato-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s;
+}
+
+.formato-card:hover {
+  border-color: #4A90E2;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.formato-icon {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.formato-icon svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.formato-card h3 {
+  color: #2E5C8A;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.formato-card p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.catalogo-datasets {
+  margin-bottom: 4rem;
+}
+
+.catalogo-datasets h2 {
+  color: #2E5C8A;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.datasets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.dataset-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+  transition: all 0.3s;
+}
+
+.dataset-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.dataset-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.dataset-header h3 {
+  color: #2E5C8A;
+  font-size: 1.5rem;
+  margin: 0;
+  flex: 1;
+}
+
+.dataset-categoria {
+  background: #4A90E2;
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+
+.dataset-descripcion {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.dataset-info {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.dataset-info p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.dataset-info strong {
+  color: #2E5C8A;
+}
+
+.dataset-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.format-select {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #e9ecef;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.format-select:focus {
+  outline: none;
+  border-color: #4A90E2;
+}
+
+.btn-download {
+  background: #4A90E2;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+
+.btn-download:hover {
+  background: #218838;
+}
+
+.licencia-info,
+.contacto-datos {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.licencia-info h2,
+.contacto-datos h2 {
+  color: #2E5C8A;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.licencia-info p,
+.contacto-datos p {
+  color: #333;
+  line-height: 1.8;
+}
+
+.licencia-info a {
+  color: #4A90E2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.licencia-info a:hover {
+  text-decoration: underline;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .datasets-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .formatos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dataset-actions {
+    flex-direction: column;
+  }
+
+  .format-select,
+  .btn-download {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

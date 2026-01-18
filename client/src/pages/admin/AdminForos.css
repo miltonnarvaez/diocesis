@@ -1,0 +1,315 @@
+.admin-foros {
+  min-height: 100vh;
+}
+
+.foros-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-card h3 {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.stat-number {
+  color: #4A90E2;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.foros-actions {
+  margin-bottom: 2rem;
+}
+
+.foro-form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.foro-form-content {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.foro-form-content h2 {
+  color: #4A90E2;
+  margin-bottom: 1.5rem;
+}
+
+.foro-form-content .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.foro-form-content label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.foro-form-content input[type="text"],
+.foro-form-content input[type="date"],
+.foro-form-content select,
+.foro-form-content textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.foro-form-content input:focus,
+.foro-form-content select:focus,
+.foro-form-content textarea:focus {
+  outline: none;
+  border-color: #4A90E2;
+  box-shadow: 0 0 0 3px rgba(4, 85, 24, 0.1);
+}
+
+.foro-form-content textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.foros-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.foro-card-admin {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.foro-card-admin:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #4A90E2;
+}
+
+.foro-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.foro-card-header h3 {
+  color: #4A90E2;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.foro-badge {
+  display: inline-block;
+  background: #f4ff10;
+  color: #4A90E2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.foro-categoria {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.foro-estado {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.foro-estado.activo {
+  background: #d4edda;
+  color: #2E5C8A;
+}
+
+.foro-estado.inactivo {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.foro-card-body {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.foro-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.foro-fecha {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.foro-card-actions {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.comentarios-pendientes-panel {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2rem;
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+.comentarios-pendientes-panel h2 {
+  color: #4A90E2;
+  margin-bottom: 1.5rem;
+}
+
+.comentarios-pendientes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comentario-pendiente-card {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.comentario-pendiente-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.comentario-pendiente-header strong {
+  color: #4A90E2;
+}
+
+.comentario-foro {
+  background: #4A90E2;
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.comentario-pendiente-card p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.comentario-pendiente-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-approve {
+  background: #4A90E2;
+  color: #ffffff;
+  flex: 1;
+}
+
+.btn-approve:hover {
+  background: #3A7BC8;
+}
+
+.btn-reject {
+  background: #dc3545;
+  color: #ffffff;
+  flex: 1;
+}
+
+.btn-reject:hover {
+  background: #c82333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,69 @@
+.escudo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.escudo-image,
+.escudo-svg {
+  max-width: 45px;
+  max-height: 45px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+  position: relative;
+}
+
+/* Tamaño en el header */
+.header .escudo-container {
+  overflow: visible !important;
+  position: relative;
+}
+
+.header .escudo-container .escudo-image,
+.header .escudo-container .escudo-svg {
+  width: 90px !important;
+  height: 90px !important;
+  max-width: 90px !important;
+  max-height: 90px !important;
+  object-fit: contain;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+  position: relative;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .header .escudo-container .escudo-image,
+  .header .escudo-container .escudo-svg {
+    width: 90px !important;
+    height: 90px !important;
+    max-width: 90px !important;
+    max-height: 90px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .escudo-image,
+  .escudo-svg {
+    max-width: 35px;
+    max-height: 35px;
+  }
+
+  .header .escudo-container .escudo-image,
+  .header .escudo-container .escudo-svg {
+    width: 80px !important;
+    height: 80px !important;
+    max-width: 80px !important;
+    max-height: 80px !important;
+  }
+}

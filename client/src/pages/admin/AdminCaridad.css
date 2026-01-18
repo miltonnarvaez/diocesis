@@ -1,0 +1,309 @@
+.admin-caridad {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.admin-caridad .admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.admin-caridad .admin-header h1 {
+  color: #333;
+  font-size: 2rem;
+}
+
+.admin-caridad .header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.admin-caridad .tipo-selector {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.admin-caridad .voluntarios-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.admin-caridad .voluntarios-section h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.admin-caridad .admin-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.admin-caridad .search-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.admin-caridad .filter-select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+}
+
+.admin-caridad .admin-table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.admin-caridad .admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-caridad .admin-table thead {
+  background: #f8f9fa;
+}
+
+.admin-caridad .admin-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.admin-caridad .admin-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.admin-caridad .admin-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.admin-caridad .badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.admin-caridad .badge-primary {
+  background: #007bff;
+  color: white;
+}
+
+.admin-caridad .badge-success {
+  background: #28a745;
+  color: white;
+}
+
+.admin-caridad .badge-danger {
+  background: #dc3545;
+  color: white;
+}
+
+.admin-caridad .badge-info {
+  background: #17a2b8;
+  color: white;
+}
+
+.admin-caridad .text-muted {
+  color: #999;
+  font-size: 0.875rem;
+}
+
+.admin-caridad .action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.admin-caridad .btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.admin-caridad .btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.admin-caridad .btn-primary:hover {
+  background: #0056b3;
+}
+
+.admin-caridad .btn-info {
+  background: #17a2b8;
+  color: white;
+}
+
+.admin-caridad .btn-info:hover {
+  background: #138496;
+}
+
+.admin-caridad .btn-danger {
+  background: #dc3545;
+  color: white;
+}
+
+.admin-caridad .btn-danger:hover {
+  background: #c82333;
+}
+
+.admin-caridad .btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.admin-caridad .btn-secondary:hover {
+  background: #5a6268;
+}
+
+.admin-caridad .btn-sm {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8125rem;
+}
+
+.admin-caridad .admin-form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.admin-caridad .admin-form-content {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.admin-caridad .admin-form-content h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.admin-caridad .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-caridad .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-caridad .form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.admin-caridad .form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.admin-caridad .form-group input,
+.admin-caridad .form-group select,
+.admin-caridad .form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.admin-caridad .form-group textarea {
+  resize: vertical;
+}
+
+.admin-caridad .form-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.admin-caridad .image-preview {
+  margin-top: 1rem;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.admin-caridad .form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .admin-caridad .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .admin-caridad .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .admin-caridad .admin-filters {
+    flex-direction: column;
+  }
+  
+  .admin-caridad .action-buttons {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

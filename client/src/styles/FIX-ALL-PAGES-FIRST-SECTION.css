@@ -1,0 +1,85 @@
+/* FIX: Aplicar el mismo estilo de agenda-hero a todas las páginas */
+/* Usar padding-top en la primera sección de cada página para que los títulos sean visibles */
+
+/* Asegurar que los breadcrumbs sean visibles */
+.breadcrumbs {
+  padding-top: 120px !important;
+  position: relative !important;
+  z-index: 1 !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Aplicar a la primera sección de cada página */
+.main-content > section:first-child,
+.main-content > .animated-section:first-child,
+.main-content > div:first-child > section:first-child,
+.encuesta-page > section:first-child,
+.encuestas-page > section:first-child,
+.gaceta-page > section:first-child,
+.foros-page > section:first-child,
+.noticias-page > section:first-child,
+.convocatorias-page > section:first-child,
+.transparencia-page > section:first-child,
+.tramites-page > section:first-child,
+.sesiones-page > section:first-child,
+.repositorio-page > section:first-child,
+.contacto-page > section:first-child,
+.acerca-page > section:first-child,
+.historia-page > section:first-child,
+.parroquias-page > section:first-child,
+.sacramentos-page > section:first-child,
+.liturgia-page > section:first-child,
+.pastoral-page > section:first-child,
+.juventud-page > section:first-child,
+.familias-page > section:first-child,
+.caridad-page > section:first-child,
+.formacion-page > section:first-child,
+.misiones-page > section:first-child,
+.medios-page > section:first-child,
+.galeria-page > section:first-child,
+.mapa-sitio-page > section:first-child,
+.politica-privacidad-page > section:first-child,
+.tratamiento-datos-page > section:first-child,
+.datos-abiertos-page > section:first-child {
+  padding-top: 120px !important;
+  padding-bottom: 2rem !important;
+  margin-top: 0 !important;
+  overflow: visible !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Asegurar que los títulos sean visibles */
+.main-content > section:first-child .page-title,
+.main-content > section:first-child h1,
+.main-content > section:first-child h2,
+.main-content > .animated-section:first-child .page-title,
+.main-content > .animated-section:first-child h1,
+.main-content > .animated-section:first-child h2,
+.encuestas-page > section:first-child .page-title,
+.encuestas-page > section:first-child h1,
+.encuestas-page > section:first-child .container h1,
+.encuestas-page > section:first-child .container .page-title {
+  position: relative !important;
+  z-index: 1001 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  color: #000000 !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+/* Responsive: menos padding en móvil */
+@media (max-width: 768px) {
+  .main-content > section:first-child,
+  .main-content > .animated-section:first-child,
+  .encuestas-page > section:first-child {
+    padding-top: 100px !important;
+  }
+}
+

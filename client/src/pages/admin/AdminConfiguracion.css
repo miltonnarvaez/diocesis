@@ -1,0 +1,281 @@
+.admin-configuracion {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.admin-header {
+  background: linear-gradient(135deg, #2E5C8A 0%, #4A90E2 100%);
+  color: #fff;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.admin-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.admin-content {
+  padding: 2rem 0;
+}
+
+.config-info {
+  background: #e8f5e9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #4A90E2;
+}
+
+.config-info p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.config-info .facebook-link {
+  color: #1877f2;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.config-info .facebook-link:hover {
+  color: #166fe5;
+}
+
+.config-list {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.config-list h2 {
+  color: #2E5C8A;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.config-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.config-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #4A90E2;
+  align-items: center;
+}
+
+.config-label label {
+  display: block;
+  color: #2E5C8A;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.config-desc {
+  color: #6c757d;
+  font-size: 0.85rem;
+  margin: 0;
+  font-style: italic;
+}
+
+.config-value {
+  display: flex;
+  align-items: center;
+}
+
+.config-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.config-text {
+  flex: 1;
+  color: #333;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.config-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.config-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #4A90E2;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.config-input:focus {
+  outline: none;
+  border-color: #2E5C8A;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+}
+
+.config-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+.btn-edit {
+  background: #17a2b8;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-edit:hover {
+  background: #138496;
+}
+
+.config-help {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.config-help h3 {
+  color: #2E5C8A;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.config-help ol {
+  margin-left: 1.5rem;
+  line-height: 2;
+}
+
+.config-help li {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Sección de Documento Institucional */
+.config-section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.documento-institucional-admin h2 {
+  color: #2E5C8A;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.section-description {
+  color: #6c757d;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.documento-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #2E5C8A;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-input,
+.form-textarea {
+  padding: 0.75rem;
+  border: 2px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #4A90E2;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.file-info {
+  margin-top: 0.5rem;
+  color: #4A90E2;
+  font-size: 0.9rem;
+}
+
+.file-info a {
+  color: #2E5C8A;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.file-info a:hover {
+  color: #4A90E2;
+}
+
+.form-group small {
+  color: #6c757d;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .config-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .config-display {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

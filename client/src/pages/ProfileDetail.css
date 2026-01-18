@@ -1,0 +1,447 @@
+/* Header Section - Similar a la referencia */
+.profile-detail-header-section {
+  background: #ffffff;
+  padding: 1.5rem 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.profile-detail-header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile-detail-header-logo .escudo-container {
+  flex-shrink: 0;
+}
+
+.profile-detail-header-logo .escudo-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.profile-detail-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.profile-detail-header-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+.profile-detail-header-subtitle {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.profile-detail-header-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #d4af37, transparent);
+  margin: 0.75rem 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.profile-detail-header-app {
+  text-align: center;
+  margin: 0.75rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.profile-detail-app-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+.profile-detail-app-acronym {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4A90E2;
+  margin: 0;
+  letter-spacing: 1.5px;
+  line-height: 1;
+}
+
+.profile-detail-app-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Profile Detail Page */
+.profile-detail-page {
+  min-height: 80vh;
+  padding: 2rem 0;
+  background: #f8f9fa;
+}
+
+.profile-detail-loading,
+.profile-detail-error {
+  text-align: center;
+  padding: 3rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-detail-error h2 {
+  color: #d32f2f;
+  margin-bottom: 1rem;
+}
+
+.profile-detail-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-detail-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Foto circular con checkmark */
+.profile-photo-section {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.profile-photo-circular {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #e0e0e0;
+  position: relative;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo-circular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-photo-circular.default {
+  background: linear-gradient(135deg, #4A90E2 0%, #2E5C8A 100%);
+  color: #ffffff;
+}
+
+.profile-photo-circular.default svg {
+  font-size: 4rem;
+}
+
+.profile-photo-checkmark {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: #4caf50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo-checkmark svg {
+  font-size: 1.5rem;
+}
+
+/* Nombre y título */
+.profile-name-section {
+  text-align: center;
+  width: 100%;
+}
+
+.profile-name-large {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-title-text {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.profile-status-active {
+  display: inline-block;
+  background: #4caf50;
+  color: #ffffff;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+}
+
+/* Detalles en dos columnas */
+.profile-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.profile-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profile-detail-label {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-detail-value {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Asignación Pastoral */
+.profile-pastoral-assignment {
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+.profile-pastoral-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-pastoral-value {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Información adicional */
+.profile-additional-info {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-info-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #4A90E2;
+}
+
+.profile-info-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4A90E2;
+  margin: 0 0 0.75rem 0;
+}
+
+.profile-info-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Información de contacto */
+.profile-contact-section {
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+.profile-contact-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #4A90E2;
+  margin: 0 0 1.5rem 0;
+}
+
+.profile-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.profile-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.profile-contact-item:hover {
+  background: #e8f5e9;
+  transform: translateY(-2px);
+}
+
+.profile-contact-icon {
+  font-size: 1.5rem;
+  color: #4A90E2;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.profile-contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.profile-contact-label {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-contact-value {
+  font-size: 1rem;
+  color: #4A90E2;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.profile-contact-value:hover {
+  text-decoration: underline;
+}
+
+/* Botón volver */
+.profile-actions-section {
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-back-profile {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  background: #4A90E2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-back-profile:hover {
+  background: #2E5C8A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-detail-header-logo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-detail-header-logo .escudo-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profile-detail-header-title {
+    font-size: 1.2rem;
+  }
+
+  .profile-detail-app-acronym {
+    font-size: 2rem;
+  }
+
+  .profile-detail-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .profile-photo-circular {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-name-large {
+    font-size: 1.5rem;
+  }
+
+  .profile-details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .profile-contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

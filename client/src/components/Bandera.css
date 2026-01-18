@@ -1,0 +1,46 @@
+.bandera-container {
+  width: 120px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bandera-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bandera-svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .bandera-container {
+    width: 100px;
+    height: 66px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

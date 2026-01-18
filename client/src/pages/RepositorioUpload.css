@@ -1,0 +1,669 @@
+.drive-repositorio-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 0;
+}
+
+.drive-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Header tipo Drive */
+.drive-header {
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.drive-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.drive-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-icon {
+  font-size: 2.5rem;
+  color: #4285f4;
+}
+
+.drive-logo h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.drive-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.drive-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  color: #666;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.drive-tab:hover {
+  background: #f5f5f5;
+  border-color: #4285f4;
+}
+
+.drive-tab.active {
+  background: #4285f4;
+  color: white;
+  border-color: #4285f4;
+}
+
+.drive-header-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #e8f0fe;
+  border-radius: 8px;
+  color: #1967d2;
+}
+
+.drive-header-info svg {
+  font-size: 1.25rem;
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+}
+
+.drive-header-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.drive-header-info strong {
+  font-weight: 600;
+}
+
+/* Contenido principal */
+.drive-content {
+  padding: 2rem;
+  min-height: calc(100vh - 200px);
+}
+
+/* Vista de Carpetas */
+.drive-folders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.drive-folder-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.drive-folder-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: #4285f4;
+}
+
+.folder-icon {
+  font-size: 4rem;
+  color: #fbbc04;
+  margin-bottom: 1rem;
+}
+
+.drive-folder-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.drive-folder-card p {
+  margin: 0;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+/* Breadcrumb */
+.drive-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.drive-breadcrumb button {
+  background: none;
+  border: none;
+  color: #4285f4;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.drive-breadcrumb button:hover {
+  text-decoration: underline;
+}
+
+.drive-breadcrumb span {
+  color: #666;
+}
+
+/* Vista de Archivos */
+.drive-files-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.drive-file-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.drive-file-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.file-delete-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #ea4335;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  opacity: 0;
+  z-index: 10;
+  font-size: 0.9rem;
+}
+
+.drive-file-card:hover .file-delete-btn {
+  opacity: 1;
+}
+
+.file-delete-btn:hover {
+  background: #c5221f;
+  transform: scale(1.1);
+}
+
+.file-delete-btn:active {
+  transform: scale(0.95);
+}
+
+.file-icon {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.file-type-icon {
+  font-size: 3rem;
+  color: #666;
+}
+
+.file-type-icon.pdf {
+  color: #ea4335;
+}
+
+.file-type-icon.word {
+  color: #4285f4;
+}
+
+.file-type-icon.excel {
+  color: #34a853;
+}
+
+.file-type-icon.powerpoint {
+  color: #fbbc04;
+}
+
+.file-info {
+  text-align: center;
+}
+
+.file-info h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.file-nota {
+  margin-top: 0.5rem !important;
+  padding: 0.5rem;
+  background: #e8f0fe;
+  border-left: 3px solid #4285f4;
+  border-radius: 4px;
+  color: #1967d2;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.file-nota .nota-icon {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.drive-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #999;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.drive-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: #666;
+}
+
+.drive-loading .spinner {
+  font-size: 3rem;
+  color: #4285f4;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+/* Vista de Subir */
+.drive-upload-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.upload-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.upload-header h2 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.75rem;
+}
+
+.upload-header p {
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.drive-upload-form {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: #4285f4;
+}
+
+.drive-upload-zone {
+  border: 3px dashed #e0e0e0;
+  border-radius: 12px;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.drive-upload-zone:hover,
+.drive-upload-zone.drag-active {
+  border-color: #4285f4;
+  background: #e8f0fe;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.upload-icon {
+  font-size: 4rem;
+  color: #4285f4;
+}
+
+.upload-text {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.upload-hint {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.drive-files-preview {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.drive-files-preview h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.files-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.file-preview-item,
+.file-success-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.file-preview-item svg,
+.file-success-item svg {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.file-preview-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.file-name {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.file-size {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.check-icon {
+  color: #4A90E2;
+}
+
+.drive-success {
+  background: rgba(74, 144, 226, 0.1);
+  border: 1px solid rgba(74, 144, 226, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.drive-success h3 {
+  margin: 0 0 1rem 0;
+  color: #2E5C8A;
+  font-size: 1rem;
+}
+
+.drive-mensaje {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.mensaje-exito {
+  background: rgba(74, 144, 226, 0.1);
+  color: #2E5C8A;
+  border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+.mensaje-error {
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+.drive-btn-submit {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #4A90E2 0%, #2E5C8A 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.drive-btn-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(66, 133, 244, 0.3);
+}
+
+.drive-btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Campo de nota opcional */
+.nota-optional {
+  margin-bottom: 1.5rem;
+}
+
+.nota-toggle {
+  margin-bottom: 0.5rem;
+}
+
+.nota-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px dashed #4285f4;
+  border-radius: 6px;
+  color: #4285f4;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nota-toggle-btn:hover {
+  background: #e8f0fe;
+  border-color: #1967d2;
+}
+
+.nota-field {
+  margin-top: 0.75rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.nota-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.nota-field textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 80px;
+  transition: border-color 0.3s ease;
+}
+
+.nota-field textarea:focus {
+  outline: none;
+  border-color: #4285f4;
+}
+
+.nota-hint {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #666;
+  text-align: right;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .drive-header {
+    padding: 1rem;
+  }
+
+  .drive-header-top {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .drive-actions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .drive-content {
+    padding: 1rem;
+  }
+
+  .drive-folders-grid,
+  .drive-files-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .drive-upload-form {
+    padding: 1.5rem;
+  }
+
+  .drive-upload-zone {
+    padding: 3rem 1rem;
+  }
+}
+
+

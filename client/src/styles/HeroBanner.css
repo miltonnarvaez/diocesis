@@ -1,0 +1,134 @@
+/* Estilos comunes para banners hero en todas las páginas */
+section.hero,
+section[class*="-hero"],
+.hero-section,
+.page-hero {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: white;
+  padding: 0 !important;
+  padding-top: 200px !important;
+  padding-bottom: 4rem !important;
+  text-align: center;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+  translate: none !important;
+  inset: auto !important;
+  min-height: 250px !important;
+  display: block !important;
+  overflow: visible !important;
+  z-index: 1 !important;
+}
+
+section.hero .container,
+section[class*="-hero"] .container,
+.hero-section .container,
+.page-hero .container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1200px !important;
+  width: 100% !important;
+  padding: 2rem var(--spacing-md) !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  position: relative !important;
+  z-index: 2 !important;
+  display: block !important;
+}
+
+section.hero .page-title,
+section[class*="-hero"] .page-title,
+.hero-section .page-title,
+.page-hero .page-title,
+section.hero h1,
+section[class*="-hero"] h1,
+.hero-section h1,
+.page-hero h1,
+section.hero h1.page-title,
+section[class*="-hero"] h1.page-title,
+.hero-section h1.page-title,
+.page-hero h1.page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  display: block !important;
+  position: relative !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 1001 !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+section.hero .page-subtitle,
+section[class*="-hero"] .page-subtitle,
+.hero-section .page-subtitle,
+.page-hero .page-subtitle {
+  font-size: 1.25rem;
+  color: #ffffff !important;
+  opacity: 1 !important;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center !important;
+  display: block !important;
+  position: relative !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+}
+
+/* Asegurar que los animated sections dentro de hero banners se muestren correctamente */
+section.hero.animated-section,
+section[class*="-hero"].animated-section,
+.hero-section.animated-section,
+.page-hero.animated-section {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+  section.hero .page-title,
+  section[class*="-hero"] .page-title,
+  .hero-section .page-title,
+  .page-hero .page-title {
+    font-size: 2rem;
+  }
+
+  section.hero .page-subtitle,
+  section[class*="-hero"] .page-subtitle,
+  .hero-section .page-subtitle,
+  .page-hero .page-subtitle {
+    font-size: 1rem;
+  }
+
+  section.hero,
+  section[class*="-hero"],
+  .hero-section,
+  .page-hero {
+    padding: 3rem 0 2rem !important;
+    min-height: 180px !important;
+  }
+}
+
+
+
+
+

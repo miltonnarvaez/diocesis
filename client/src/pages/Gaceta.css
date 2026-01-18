@@ -1,0 +1,157 @@
+.gaceta-page {
+  padding: 2rem 0;
+}
+
+.gaceta-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 0.75rem 1.5rem;
+  background: #f8f9fa;
+  color: #2E5C8A;
+  border: 2px solid #e9ecef;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.filter-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.filter-icon svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  color: inherit;
+}
+
+.filter-btn:hover {
+  background: #e9ecef;
+  border-color: #4A90E2;
+}
+
+.filter-btn.active {
+  background: #4A90E2;
+  color: #fff;
+  border-color: #4A90E2;
+}
+
+.documentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.documento-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 4px solid #4A90E2;
+}
+
+.documento-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.documento-tipo {
+  display: inline-block;
+  background: #4A90E2;
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.documento-numero {
+  display: block;
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.documento-content h2 {
+  color: #2E5C8A;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.documento-content p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.documento-actualizacion {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.documento-actualizacion strong {
+  color: #2E5C8A;
+  font-weight: 600;
+}
+
+.documento-fecha {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.documento-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.documento-actions .btn-secondary {
+  background: #6c757d;
+  color: #ffffff;
+}
+
+.documento-actions .btn-secondary:hover {
+  background: #5a6268;
+}
+
+.loading,
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .documentos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gaceta-filters {
+    flex-direction: column;
+  }
+}
+
+
+
+

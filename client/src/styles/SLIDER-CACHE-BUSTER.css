@@ -1,0 +1,53 @@
+/* CACHE BUSTER v13.0 - Force reload - ULTRA PRIORITY */
+
+/* Override slider image position - Show from very top - MAXIMUM SPECIFICITY */
+.home .hero-slider .slide,
+.home .hero-slider .slider-container .slide,
+.home .hero-slider div.slide,
+.hero-slider .slide,
+.slider-container .slide,
+div.slide {
+  background-position: center 0% !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Force slider height and position - SAME HEIGHT, SHOW TOP */
+.hero-slider,
+section.hero-slider,
+div.hero-slider {
+  margin-top: 80px !important;
+  padding-top: 0 !important;
+  padding-bottom: 40% !important;
+}
+
+/* Pantallas grandes */
+@media (min-width: 1920px) {
+  .hero-slider,
+  section.hero-slider,
+  div.hero-slider {
+    padding-bottom: 33.5% !important;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero-slider,
+  section.hero-slider,
+  div.hero-slider {
+    margin-top: 80px !important;
+    padding-top: 0 !important;
+    padding-bottom: 43.5% !important;
+  }
+}
+
+/* Móvil */
+@media (max-width: 480px) {
+  .hero-slider,
+  section.hero-slider,
+  div.hero-slider {
+    margin-top: 55px !important;
+    padding-top: 0 !important;
+    padding-bottom: 49% !important;
+  }
+}

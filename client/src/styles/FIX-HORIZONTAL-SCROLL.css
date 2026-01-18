@@ -1,0 +1,88 @@
+/* FIX: Eliminar scroll horizontal causado por elementos fixed fuera del viewport */
+/* Este archivo debe cargarse al final para tener máxima prioridad */
+
+/* Asegurar que body y html no tengan scroll horizontal */
+html,
+body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+}
+
+/* Ocultar elementos fixed que estén fuera del viewport en móvil */
+@media (max-width: 768px) {
+  /* Ocultar cualquier elemento fixed que esté causando scroll horizontal */
+  [style*="position: fixed"][style*="left: 687px"],
+  [style*="position:fixed"][style*="left:687px"],
+  div[style*="position: fixed"][style*="left: 687px"],
+  div[style*="position:fixed"][style*="left:687px"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  /* Ocultar elementos con data-cursor-element-id que estén fuera del viewport */
+  [data-cursor-element-id] {
+    max-width: 100vw !important;
+  }
+
+  /* Ocultar elementos de depuración que estén causando scroll */
+  [data-cursor-element-id][style*="left: 687px"],
+  [data-cursor-element-id][style*="left:687px"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  /* Asegurar que elementos fixed no excedan el ancho del viewport */
+  [style*="position: fixed"],
+  [style*="position:fixed"] {
+    max-width: 100vw !important;
+  }
+
+  /* Específicamente para el icono de accesibilidad */
+  .accessibility-bar,
+  .accessibility-toggle {
+    right: 0 !important;
+    left: auto !important;
+    max-width: 100vw !important;
+  }
+
+  /* Específicamente para elementos con SVG que estén causando scroll */
+  div[style*="position: fixed"] svg,
+  div[style*="position:fixed"] svg {
+    max-width: 100vw !important;
+  }
+}
+
+/* Asegurar que el contenedor principal no tenga scroll horizontal */
+#root,
+.App,
+.main-content {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+}
+
+/* Ocultar elementos de depuración de Cursor que puedan interferir */
+div[data-cursor-element-id][style*="position: fixed"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+
+/* Asegurar que todas las secciones estén centradas */
+.home .section,
+.home .animated-section,
+.home section,
+.home section.animated-section {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+

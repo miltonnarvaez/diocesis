@@ -1,0 +1,88 @@
+/* FIX ULTRA ESPECÍFICO PARA ELIMINAR SCROLL Y DESPLAZAMIENTO EN enlaces-grid */
+/* Este archivo debe cargarse DESPUÉS de todos los demás para tener máxima prioridad */
+
+/* REGLAS ULTRA ESPECÍFICAS CON MÁXIMA PRIORIDAD */
+div#root > div.App > main.main-content > div.home > section.animated-section.enlaces-interes > div.container > div.enlaces-grid,
+div#root > div.App > main.main-content > div.home > section.animated-section.animate-bounceIn.enlaces-interes > div.container > div.enlaces-grid,
+section.animated-section.enlaces-interes .container .enlaces-grid,
+section.animated-section.animate-bounceIn.enlaces-interes .container .enlaces-grid,
+.enlaces-interes .container .enlaces-grid,
+.enlaces-interes .enlaces-grid,
+.enlaces-grid {
+  /* Eliminar scroll COMPLETAMENTE - Tanto horizontal como vertical */
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  overflow: hidden !important;
+  scroll-behavior: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  
+  /* Eliminar desplazamiento horizontal - FORZAR left: 0 */
+  left: 0 !important;
+  right: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  
+  /* Eliminar desplazamiento vertical */
+  top: auto !important;
+  margin-top: var(--spacing-lg) !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  
+  /* Posicionamiento */
+  position: relative !important;
+  transform: none !important;
+  translate: none !important;
+  inset: auto !important;
+  
+  /* Dimensiones - Ajustar para respetar el padding del contenedor */
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+  min-height: 0 !important;
+  box-sizing: border-box !important;
+  
+  /* Asegurar que no haya float o clear */
+  float: none !important;
+  clear: both !important;
+  
+  /* Forzar que no haya desplazamiento */
+  will-change: auto !important;
+}
+
+/* Asegurar que el contenedor no cause scroll */
+.enlaces-interes .container,
+section.animated-section.enlaces-interes .container,
+div#root > div.App > main.main-content > div.home > section.animated-section.enlaces-interes > div.container {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+/* Asegurar que la sección completa no cause scroll */
+.enlaces-interes,
+section.animated-section.enlaces-interes {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+

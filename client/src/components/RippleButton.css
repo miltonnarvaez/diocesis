@@ -1,0 +1,48 @@
+.ripple-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.ripple-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(0);
+  animation: ripple-animation 0.6s ease-out;
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Variantes de color para diferentes tipos de botones */
+.ripple-button.btn-primary .ripple {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.ripple-button.btn-secondary .ripple {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.ripple-button.btn-success .ripple {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.ripple-button.btn-danger .ripple {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+

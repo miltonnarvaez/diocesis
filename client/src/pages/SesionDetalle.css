@@ -1,0 +1,261 @@
+.sesion-detalle-page {
+  padding: 2rem 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #4A90E2;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #2E5C8A;
+}
+
+.sesion-detalle-header {
+  margin-bottom: 2rem;
+}
+
+.sesion-badges {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.sesion-detalle-header h1 {
+  color: #2E5C8A;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.sesion-detalle-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.sesion-info-detalle {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-item strong {
+  color: #2E5C8A;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.info-item span {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.sesion-resumen-detalle,
+.sesion-orden-dia,
+.sesion-video-section,
+.sesion-documentos,
+.sesion-documentos-relacionados,
+.sesion-asistentes {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.sesion-resumen-detalle h3,
+.sesion-orden-dia h3,
+.sesion-video-section h3,
+.sesion-documentos h3,
+.sesion-documentos-relacionados h3,
+.sesion-asistentes h3 {
+  color: #2E5C8A;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.sesion-resumen-detalle p {
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.orden-dia-content {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  line-height: 1.8;
+}
+
+.orden-dia-content ul {
+  margin-left: 2rem;
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.video-embed iframe,
+.video-embed video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+.video-links {
+  text-align: center;
+}
+
+.documentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.documento-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #4A90E2;
+}
+
+.documento-item h4 {
+  color: #2E5C8A;
+  margin-bottom: 0.5rem;
+}
+
+.documento-tipo {
+  background: #4A90E2;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.documento-numero {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.votacion {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.votacion.aprobado {
+  color: #2E5C8A;
+}
+
+.votacion.rechazado {
+  color: #dc3545;
+}
+
+.asistentes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.asistente-item {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.asistente-cargo {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.asistente-ausente {
+  color: #dc3545;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.sesion-facebook-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.facebook-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: #1877f2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3);
+}
+
+.facebook-link-btn:hover {
+  background: #166fe5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(24, 119, 242, 0.4);
+}
+
+@media (max-width: 768px) {
+  .sesion-detalle-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .sesion-info-detalle {
+    grid-template-columns: 1fr;
+  }
+
+  .documentos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+.logo-texto-container {
+  display: none !important; /* Ocultar logo con texto */
+}
+
+.logo-texto-image {
+  max-height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo-texto-image {
+    max-height: 36px;
+  }
+  
+  .logo-texto-container {
+    gap: 0.4rem;
+  }
+}

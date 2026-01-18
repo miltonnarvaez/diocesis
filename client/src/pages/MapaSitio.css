@@ -1,0 +1,145 @@
+.mapa-sitio-page {
+  padding: 2rem 0;
+}
+
+.mapa-intro {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #4A90E2;
+}
+
+.mapa-intro p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.mapa-secciones {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mapa-seccion {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-seccion h2 {
+  color: #2E5C8A;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #4A90E2;
+}
+
+.mapa-enlaces {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mapa-enlaces li {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.mapa-enlaces li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.mapa-enlaces a {
+  color: #4A90E2;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.mapa-enlaces a:hover {
+  color: #2E5C8A;
+  text-decoration: underline;
+}
+
+.enlace-descripcion {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+}
+
+.mapa-enlaces-externos {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-enlaces-externos h2 {
+  color: #2E5C8A;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #4A90E2;
+}
+
+.mapa-enlaces-externos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mapa-enlaces-externos li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.mapa-enlaces-externos li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #4A90E2;
+  font-weight: bold;
+}
+
+.mapa-enlaces-externos a {
+  color: #4A90E2;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.mapa-enlaces-externos a:hover {
+  color: #2E5C8A;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .mapa-seccion,
+  .mapa-enlaces-externos {
+    padding: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

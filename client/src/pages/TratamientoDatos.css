@@ -1,0 +1,69 @@
+.tratamiento-page {
+  padding: 2rem 0;
+}
+
+.tratamiento-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.8;
+}
+
+.fecha-actualizacion {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #4A90E2;
+}
+
+.tratamiento-content section {
+  margin-bottom: 2.5rem;
+}
+
+.tratamiento-content h2 {
+  color: #2E5C8A;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #4A90E2;
+}
+
+.tratamiento-content p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.tratamiento-content ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tratamiento-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .tratamiento-content {
+    padding: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

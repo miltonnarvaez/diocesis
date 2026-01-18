@@ -1,0 +1,164 @@
+.admin-opiniones {
+  min-height: 100vh;
+}
+
+.opiniones-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.opinion-card-admin {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.opinion-card-admin:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #4A90E2;
+}
+
+.opinion-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.opinion-card-header h3 {
+  color: #4A90E2;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.opinion-proyecto {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.estado-badge {
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.opinion-card-body {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.opinion-card-body p {
+  margin-bottom: 0.75rem;
+}
+
+.opinion-card-body strong {
+  color: #4A90E2;
+}
+
+.opinion-fecha {
+  color: #999;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.opinion-card-actions {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.btn-edit {
+  background: #4A90E2;
+  color: #ffffff;
+}
+
+.btn-edit:hover {
+  background: #2e7d32;
+}
+
+.btn-delete {
+  background: #dc3545;
+  color: #ffffff;
+}
+
+.btn-delete:hover {
+  background: #c82333;
+}
+
+.opinion-form-panel {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2rem;
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+.opinion-form-panel h2 {
+  color: #4A90E2;
+  margin-bottom: 1.5rem;
+}
+
+.opinion-form-panel .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.opinion-form-panel label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.opinion-form-panel select,
+.opinion-form-panel textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.opinion-form-panel select:focus,
+.opinion-form-panel textarea:focus {
+  outline: none;
+  border-color: #4A90E2;
+  box-shadow: 0 0 0 3px rgba(4, 85, 24, 0.1);
+}
+
+.opinion-form-panel textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.opinion-form-panel .btn {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

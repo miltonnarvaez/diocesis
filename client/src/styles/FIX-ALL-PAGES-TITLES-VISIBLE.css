@@ -1,0 +1,116 @@
+/* FIX CRÍTICO: Hacer visibles TODOS los títulos en TODAS las páginas */
+
+/* Aplicar padding-top a todas las secciones hero */
+section[class*="-hero"],
+.animated-section[class*="-hero"],
+section.animated-section[class*="-hero"],
+.hero-section,
+.page-hero,
+section.hero {
+  padding-top: 200px !important;
+  margin-top: 0 !important;
+  overflow: visible !important;
+}
+
+/* Desactivar animaciones para TODOS los títulos en secciones hero */
+section[class*="-hero"] h1,
+section[class*="-hero"] h2,
+section[class*="-hero"] h3,
+section[class*="-hero"] .page-title,
+section[class*="-hero"] .section-title,
+.animated-section[class*="-hero"] h1,
+.animated-section[class*="-hero"] h2,
+.animated-section[class*="-hero"] h3,
+.animated-section[class*="-hero"] .page-title,
+.animated-section[class*="-hero"] .section-title,
+section.animated-section[class*="-hero"] h1,
+section.animated-section[class*="-hero"] h2,
+section.animated-section[class*="-hero"] h3,
+section.animated-section[class*="-hero"] .page-title,
+section.animated-section[class*="-hero"] .section-title,
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.hero-section .page-title,
+.page-hero h1,
+.page-hero h2,
+.page-hero h3,
+.page-hero .page-title,
+section.hero h1,
+section.hero h2,
+section.hero h3,
+section.hero .page-title {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 1001 !important;
+  animation: none !important;
+  transform: none !important;
+  animation-delay: 0s !important;
+}
+
+/* Forzar visibilidad de TODOS los h1, h2, h3 en TODAS las páginas */
+.animated-section.animate-fadeInUp h1,
+.animated-section.animate-fadeInUp h2,
+.animated-section.animate-fadeInUp h3,
+.animated-section.animate-fadeInUp .page-title,
+.animated-section.animate-fadeInUp .section-title,
+section.animated-section.animate-fadeInUp h1,
+section.animated-section.animate-fadeInUp h2,
+section.animated-section.animate-fadeInUp h3,
+section.animated-section.animate-fadeInUp .page-title,
+section.animated-section.animate-fadeInUp .section-title {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  animation: none !important;
+  transform: none !important;
+  animation-delay: 0s !important;
+}
+
+/* Reglas específicas para páginas comunes */
+.plan-accion-page section[class*="-hero"],
+.plan-accion-page .plan-hero,
+.agenda-page section[class*="-hero"],
+.agenda-page .agenda-hero,
+.noticias-page section[class*="-hero"],
+.convocatorias-page section[class*="-hero"],
+.gaceta-page section[class*="-hero"],
+.contacto-page section[class*="-hero"],
+.transparencia-page section[class*="-hero"] {
+  padding-top: 200px !important;
+  margin-top: 0 !important;
+  overflow: visible !important;
+}
+
+/* Títulos en contenedores dentro de secciones hero */
+section[class*="-hero"] .container h1,
+section[class*="-hero"] .container h2,
+section[class*="-hero"] .container h3,
+section[class*="-hero"] .container .page-title,
+section[class*="-hero"] .container .section-title,
+.animated-section[class*="-hero"] .container h1,
+.animated-section[class*="-hero"] .container h2,
+.animated-section[class*="-hero"] .container h3,
+.animated-section[class*="-hero"] .container .page-title,
+.animated-section[class*="-hero"] .container .section-title {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  animation: none !important;
+  transform: none !important;
+  z-index: 1001 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+

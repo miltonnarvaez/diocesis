@@ -1,0 +1,300 @@
+/* FIX PARA ELIMINAR DIVS BLANCAS QUE BLOQUEAN INTERACCIÓN */
+/* Este archivo corrige overlays blancos que bloquean la interacción en TODAS las páginas */
+
+/* ============================================
+   REGLAS GLOBALES PARA TODAS LAS PÁGINAS
+   ============================================ */
+
+/* Asegurar que todos los pseudo-elementos ::before y ::after no bloqueen interacción */
+.animated-section::before,
+.animated-section::after,
+.section::before,
+.section::after {
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+
+/* Reglas específicas por página (mantener compatibilidad) */
+.plan-accion-page .animated-section::before,
+.plan-accion-page .animated-section::after,
+.plan-accion-page .section::before,
+.plan-accion-page .section::after,
+.acerca .animated-section::before,
+.acerca .animated-section::after,
+.acerca .section::before,
+.acerca .section::after,
+.historia .animated-section::before,
+.historia .animated-section::after,
+.historia .section::before,
+.historia .section::after,
+.home .animated-section::before,
+.home .animated-section::after,
+.home .section::before,
+.home .section::after,
+.noticias .animated-section::before,
+.noticias .animated-section::after,
+.noticias .section::before,
+.noticias .section::after,
+.foros .animated-section::before,
+.foros .animated-section::after,
+.foros .section::before,
+.foros .section::after,
+.gaceta .animated-section::before,
+.gaceta .animated-section::after,
+.gaceta .section::before,
+.gaceta .section::after,
+.tramites .animated-section::before,
+.tramites .animated-section::after,
+.tramites .section::before,
+.tramites .section::after,
+.transparencia .animated-section::before,
+.transparencia .animated-section::after,
+.transparencia .section::before,
+.transparencia .section::after,
+.galeria .animated-section::before,
+.galeria .animated-section::after,
+.galeria .section::before,
+.galeria .section::after {
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+
+/* Específicamente para las animaciones que pueden causar overlays */
+.animated-section.animate-fadeInUp::before,
+.animated-section.animate-fadeInLeft::before,
+.animated-section.animate-fadeInRight::before,
+.animated-section.animate-scaleIn::before,
+.animated-section.animate-slideUpFade::before,
+.animated-section.animate-bounceIn::before {
+  pointer-events: none !important;
+  z-index: -1 !important;
+  opacity: 0 !important;
+  display: none !important;
+}
+
+/* Asegurar que los contenedores y secciones no tengan overlays bloqueantes */
+.plan-accion-page .container::before,
+.plan-accion-page .container::after,
+.plan-accion-page .section::before,
+.plan-accion-page .section::after,
+.plan-accion-page .animated-section::before,
+.plan-accion-page .animated-section::after {
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+
+/* Asegurar que elementos con position absolute no bloqueen */
+.plan-accion-page [style*="position: absolute"],
+.plan-accion-page [style*="position:fixed"] {
+  pointer-events: auto !important;
+}
+
+/* Asegurar que elementos con z-index alto no bloqueen sin necesidad */
+.plan-accion-page [style*="z-index"] {
+  pointer-events: auto !important;
+}
+
+/* ============================================
+   REGLAS GLOBALES PARA TODAS LAS TARJETAS
+   ============================================ */
+
+/* Eliminar overlays blancos de TODAS las tarjetas en TODAS las páginas */
+.anuncio-card::before,
+.anuncio-card::after,
+.acceso-item::before,
+.acceso-item::after,
+.gaceta-item::before,
+.gaceta-item::after,
+.grupo-card::before,
+.grupo-card::after,
+.contacto-info-card::before,
+.contacto-info-card::after,
+.contacto-action-card::before,
+.contacto-action-card::after,
+.herramienta-card::before,
+.herramienta-card::after,
+.mesa-directiva-card::before,
+.mesa-directiva-card::after,
+.mision-vision-card::before,
+.mision-vision-card::after,
+.valor-card::before,
+.valor-card::after,
+.politica-item::before,
+.politica-item::after,
+.objetivo-item::before,
+.objetivo-item::after,
+.fortalecimiento-item::before,
+.fortalecimiento-item::after,
+.plazo-seguimiento-card::before,
+.plazo-seguimiento-card::after,
+.diagnostico-item::before,
+.diagnostico-item::after,
+.proyeccion-item::before,
+.proyeccion-item::after,
+.estructura-card::before,
+.estructura-card::after,
+.foro-card::before,
+.foro-card::after,
+.noticia-card::before,
+.noticia-card::after,
+.convocatoria-card::before,
+.convocatoria-card::after,
+.card::before,
+.card::after,
+.galeria-item::before,
+.galeria-item::after,
+.tramite-card::before,
+.tramite-card::after,
+.sesion-card::before,
+.sesion-card::after,
+.encuesta-card::before,
+.encuesta-card::after,
+.transparencia-card::before,
+.transparencia-card::after {
+  pointer-events: none !important;
+  z-index: -1 !important;
+  opacity: 0 !important;
+  display: none !important;
+  content: none !important;
+  background: transparent !important;
+  visibility: hidden !important;
+}
+
+/* ============================================
+   REGLAS GLOBALES PARA CONTENEDORES
+   ============================================ */
+
+/* Asegurar que los contenedores no tengan overlays bloqueantes */
+.container::before,
+.container::after,
+.section::before,
+.section::after,
+.animated-section::before,
+.animated-section::after {
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+
+/* Reglas específicas por página para contenedores */
+.plan-accion-page .container::before,
+.plan-accion-page .container::after,
+.acerca .container::before,
+.acerca .container::after,
+.historia .container::before,
+.historia .container::after,
+.home .container::before,
+.home .container::after {
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+
+/* ============================================
+   REGLAS GLOBALES PARA ELEMENTOS INTERACTIVOS
+   ============================================ */
+
+/* Asegurar que elementos interactivos mantengan su funcionalidad */
+button,
+a,
+input,
+textarea,
+select,
+.btn,
+.btn-primary,
+.btn-secondary,
+[role="button"],
+[onclick] {
+  pointer-events: auto !important;
+}
+
+/* Asegurar que las tarjetas sean interactivas */
+.anuncio-card,
+.acceso-item,
+.gaceta-item,
+.grupo-card,
+.contacto-info-card,
+.contacto-action-card,
+.herramienta-card,
+.mesa-directiva-card,
+.mision-vision-card,
+.valor-card,
+.politica-item,
+.objetivo-item,
+.fortalecimiento-item,
+.plazo-seguimiento-card,
+.diagnostico-item,
+.proyeccion-item,
+.estructura-card,
+.foro-card,
+.noticia-card,
+.convocatoria-card,
+.card,
+.galeria-item,
+.tramite-card,
+.sesion-card,
+.encuesta-card,
+.transparencia-card,
+.estadistica-plan-card,
+.estadistica-card {
+  pointer-events: auto !important;
+  position: relative;
+}
+
+/* ============================================
+   REGLAS ESPECÍFICAS POR PÁGINA (COMPATIBILIDAD)
+   ============================================ */
+
+/* PlanAccion - Reglas específicas adicionales */
+.plan-accion-page .herramientas-grid .herramienta-card::before,
+.plan-accion-page .herramientas-grid .herramienta-card::after {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  z-index: -999 !important;
+  content: none !important;
+  background: transparent !important;
+}
+
+/* ============================================
+   REGLAS GENERALES PARA ELEMENTOS CON POSITION
+   ============================================ */
+
+/* Asegurar que elementos con position absolute/fixed no bloqueen innecesariamente */
+[style*="position: absolute"]:not(button):not(a):not(input):not(textarea):not(select):not(.btn):not([role="button"]):not([onclick]),
+[style*="position:fixed"]:not(button):not(a):not(input):not(textarea):not(select):not(.btn):not([role="button"]):not([onclick]) {
+  pointer-events: auto !important;
+}
+
+/* Asegurar que elementos con z-index alto no bloqueen sin necesidad */
+[style*="z-index"]:not(button):not(a):not(input):not(textarea):not(select):not(.btn):not([role="button"]):not([onclick]) {
+  pointer-events: auto !important;
+}
+
+/* ============================================
+   REGLA GENERAL DE SEGURIDAD
+   ============================================ */
+
+/* Regla general: todos los pseudo-elementos ::before y ::after deben tener pointer-events: none */
+/* Excepción: elementos interactivos específicos que necesitan pointer-events */
+*::before:not(button::before):not(a::before):not(input::before):not(textarea::before):not(select::before),
+*::after:not(button::after):not(a::after):not(input::after):not(textarea::after):not(select::after) {
+  pointer-events: none !important;
+}
+
+/* Asegurar que los overlays blancos visibles sean eliminados */
+[class*="overlay"]::before,
+[class*="overlay"]::after,
+[class*="white"]::before,
+[class*="white"]::after,
+[style*="background.*white"]::before,
+[style*="background.*white"]::after,
+[style*="background.*rgba(255"]::before,
+[style*="background.*rgba(255"]::after {
+  opacity: 0 !important;
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  z-index: -999 !important;
+}
+
+
