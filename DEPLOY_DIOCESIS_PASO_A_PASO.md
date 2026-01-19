@@ -506,4 +506,47 @@ sudo nginx -t
 
 ---
 
+## 🔄 ACTUALIZAR EL CÓDIGO DESPUÉS DEL DESPLIEGUE
+
+Cuando hagas cambios en tu código local y quieras actualizarlos en el servidor:
+
+### 1. Actualizar el código desde GitHub
+
+```bash
+cd /var/www/diocesis
+
+# Si Git detecta un problema de propiedad, ejecuta esto primero:
+git config --global --add safe.directory /var/www/diocesis
+
+# Luego actualiza el código:
+git pull origin main
+```
+
+### 2. Reconstruir el frontend (si hay cambios en el cliente)
+
+```bash
+cd /var/www/diocesis/client
+npm run build
+```
+
+### 3. Reiniciar el backend (si hay cambios en el servidor)
+
+```bash
+cd /var/www/diocesis/server
+pm2 restart diocesis-api
+```
+
+### 4. Verificar que todo funcione
+
+```bash
+# Ver logs del backend
+pm2 logs diocesis-api --lines 50
+
+# Verificar Nginx
+sudo nginx -t
+sudo systemctl status nginx
+```
+
+---
+
 ¡Listo! El proyecto de la Diócesis de Ipiales debería estar funcionando en el servidor. 🎉

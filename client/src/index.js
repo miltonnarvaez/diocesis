@@ -22,6 +22,7 @@ import './styles/ENHANCED-DESIGN.css';
 import './styles/FIX-WHITE-OVERLAY.css';
 import './styles/FIX-HORIZONTAL-SCROLL.css';
 import './styles/FIX-RESPONSIVE-CONTACTO.css';
+import './styles/RESPONSIVE-IMPROVEMENTS.css';
 import { AuthProvider } from './context/AuthContext';
 import { AccessibilityProvider } from './context/AccessibilityContext';
 import { LanguageProvider } from './context/LanguageContext';

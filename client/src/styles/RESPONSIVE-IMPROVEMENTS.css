@@ -1,0 +1,551 @@
+/* ============================================
+   MEJORAS RESPONSIVAS COMPLETAS
+   ============================================ */
+
+/* Reset global para evitar problemas de overflow */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+}
+
+#root,
+.App,
+.main-content {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+}
+
+/* ============================================
+   CONTACTO Y UBICACIÓN - MEJORAS PROFUNDAS
+   ============================================ */
+
+.contacto-ubicacion {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+}
+
+.contacto-ubicacion .container {
+  width: 100% !important;
+  max-width: 1200px !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  padding-left: var(--spacing-md) !important;
+  padding-right: var(--spacing-md) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.contacto-ubicacion-grid {
+  display: grid !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  gap: var(--spacing-lg) !important;
+  /* Grid más flexible que se adapta mejor */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  align-items: start !important;
+}
+
+/* Columna izquierda (info de contacto) */
+.contacto-ubicacion-info {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--spacing-sm) !important;
+}
+
+.contacto-ubicacion-info .contacto-info-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  min-width: 0 !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: var(--spacing-md) !important;
+  padding: var(--spacing-md) !important;
+}
+
+.contacto-ubicacion-info .contacto-info-card h3,
+.contacto-ubicacion-info .contacto-info-card p {
+  max-width: 100% !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+  min-width: 0 !important;
+  flex: 1 1 auto !important;
+}
+
+/* Columna derecha (mapa) */
+.contacto-ubicacion-mapa {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  min-width: 0 !important;
+}
+
+.contacto-ubicacion-mapa .mapa-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+/* ============================================
+   GRIDS GENERALES - MEJORAS
+   ============================================ */
+
+/* Asegurar que todos los grids sean responsivos */
+[class*="-grid"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+}
+
+/* Estadísticas */
+.estadisticas-grid,
+.estadisticas-diocesanas-grid {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding-left: var(--spacing-md) !important;
+  padding-right: var(--spacing-md) !important;
+}
+
+/* Noticias y Convocatorias */
+.noticias-grid,
+.convocatorias-grid {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding-left: var(--spacing-md) !important;
+  padding-right: var(--spacing-md) !important;
+}
+
+/* Acceso Rápido */
+.acceso-grid {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding-left: var(--spacing-md) !important;
+  padding-right: var(--spacing-md) !important;
+}
+
+/* Gaceta y Enlaces */
+.gaceta-grid,
+.enlaces-grid {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding-left: var(--spacing-md) !important;
+  padding-right: var(--spacing-md) !important;
+  overflow-x: hidden !important;
+}
+
+/* Grupos de Interés */
+.grupos-grid {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding-left: var(--spacing-md) !important;
+  padding-right: var(--spacing-md) !important;
+}
+
+/* ============================================
+   CARDS Y ELEMENTOS - MEJORAS
+   ============================================ */
+
+/* Asegurar que todas las cards sean responsivas */
+[class*="-card"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Texto en cards */
+[class*="-card"] h3,
+[class*="-card"] p,
+[class*="-card"] span {
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+  max-width: 100% !important;
+}
+
+/* ============================================
+   MEDIA QUERIES - BREAKPOINTS MEJORADOS
+   ============================================ */
+
+/* Extra Large Desktop (1400px+) */
+@media (min-width: 1400px) {
+  .contacto-ubicacion-grid {
+    grid-template-columns: minmax(300px, 380px) 1fr !important;
+    gap: var(--spacing-xl) !important;
+  }
+}
+
+/* Large Desktop (1200px - 1399px) */
+@media (max-width: 1399px) and (min-width: 1200px) {
+  .contacto-ubicacion-grid {
+    grid-template-columns: minmax(280px, 350px) 1fr !important;
+    gap: var(--spacing-lg) !important;
+  }
+}
+
+/* Desktop (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .contacto-ubicacion-grid {
+    grid-template-columns: minmax(260px, 320px) 1fr !important;
+    gap: var(--spacing-md) !important;
+  }
+  
+  .contacto-ubicacion .container {
+    padding-left: var(--spacing-md) !important;
+    padding-right: var(--spacing-md) !important;
+  }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .contacto-ubicacion-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-lg) !important;
+  }
+  
+  .contacto-ubicacion .container {
+    padding-left: var(--spacing-md) !important;
+    padding-right: var(--spacing-md) !important;
+  }
+  
+  .contacto-ubicacion-info {
+    order: 1 !important;
+  }
+  
+  .contacto-ubicacion-mapa {
+    order: 2 !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card {
+    flex-direction: row !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Grids de 2 columnas en tablet */
+  .estadisticas-grid,
+  .estadisticas-diocesanas-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .noticias-grid,
+  .convocatorias-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .acceso-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  
+  .gaceta-grid,
+  .enlaces-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* Mobile Large (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .contacto-ubicacion-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-md) !important;
+  }
+  
+  .contacto-ubicacion .container {
+    padding-left: var(--spacing-sm) !important;
+    padding-right: var(--spacing-sm) !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: var(--spacing-md) !important;
+    gap: var(--spacing-sm) !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card h3,
+  .contacto-ubicacion-info .contacto-info-card p {
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  /* Grids de 2 columnas en mobile large */
+  .estadisticas-grid,
+  .estadisticas-diocesanas-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--spacing-sm) !important;
+  }
+  
+  .noticias-grid,
+  .convocatorias-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .acceso-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--spacing-sm) !important;
+  }
+  
+  .gaceta-grid,
+  .enlaces-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--spacing-sm) !important;
+  }
+  
+  .grupos-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--spacing-sm) !important;
+  }
+}
+
+/* Mobile (480px - 575px) */
+@media (max-width: 575px) and (min-width: 480px) {
+  .contacto-ubicacion-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-sm) !important;
+  }
+  
+  .contacto-ubicacion .container {
+    padding-left: var(--spacing-xs) !important;
+    padding-right: var(--spacing-xs) !important;
+  }
+  
+  .contacto-ubicacion-info {
+    gap: var(--spacing-xs) !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: var(--spacing-sm) !important;
+    gap: var(--spacing-xs) !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card h3 {
+    font-size: 0.95rem !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card p {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Grids de 1-2 columnas en mobile */
+  .estadisticas-grid,
+  .estadisticas-diocesanas-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--spacing-xs) !important;
+  }
+  
+  .noticias-grid,
+  .convocatorias-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-sm) !important;
+  }
+  
+  .acceso-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--spacing-xs) !important;
+  }
+  
+  .gaceta-grid,
+  .enlaces-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--spacing-xs) !important;
+  }
+  
+  .grupos-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-sm) !important;
+  }
+}
+
+/* Mobile Small (hasta 479px) */
+@media (max-width: 479px) {
+  .contacto-ubicacion-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-xs) !important;
+  }
+  
+  .contacto-ubicacion .container {
+    padding-left: var(--spacing-xs) !important;
+    padding-right: var(--spacing-xs) !important;
+  }
+  
+  .contacto-ubicacion-info {
+    gap: var(--spacing-xs) !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: var(--spacing-sm) !important;
+    gap: var(--spacing-xs) !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card h3 {
+    font-size: 0.9rem !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card p {
+    font-size: 0.85rem !important;
+  }
+  
+  /* Grids de 1 columna en mobile small */
+  .estadisticas-grid,
+  .estadisticas-diocesanas-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-xs) !important;
+  }
+  
+  .noticias-grid,
+  .convocatorias-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-sm) !important;
+  }
+  
+  .acceso-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-xs) !important;
+  }
+  
+  .gaceta-grid,
+  .enlaces-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-xs) !important;
+  }
+  
+  .grupos-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-sm) !important;
+  }
+  
+  /* Ajustar tamaños de fuente */
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* ============================================
+   MEJORAS ESPECÍFICAS PARA ELEMENTOS
+   ============================================ */
+
+/* Botones responsivos */
+.contacto-botones {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: var(--spacing-sm) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.contacto-botones .btn {
+  flex: 1 1 auto !important;
+  min-width: 120px !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Mapa responsivo */
+.contacto-ubicacion-mapa .mapa-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Asegurar que no haya overflow en ninguna sección */
+.home .section,
+.home .animated-section,
+.home section {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
+}
+
+/* Contenedores principales */
+.home .container,
+.home .section .container,
+.home .animated-section .container {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 1200px !important;
+  box-sizing: border-box !important;
+  padding-left: var(--spacing-md) !important;
+  padding-right: var(--spacing-md) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ============================================
+   UTILIDADES RESPONSIVAS
+   ============================================ */
+
+/* Clase helper para ocultar en móvil */
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+/* Clase helper para ocultar en desktop */
+@media (min-width: 768px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+
+/* Asegurar que imágenes sean responsivas */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+}
+
+/* Asegurar que videos sean responsivos */
+video,
+iframe {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}

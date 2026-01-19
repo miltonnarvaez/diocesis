@@ -1015,9 +1015,9 @@
 
 .contacto-ubicacion-grid {
   display: grid;
-  grid-template-columns: minmax(280px, 350px) 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: var(--spacing-lg);
-  align-items: stretch;
+  align-items: start;
   margin-top: var(--spacing-md);
   width: 100%;
   max-width: 100%;
@@ -1025,6 +1025,7 @@
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 }
 
 .contacto-ubicacion-info {
@@ -1123,7 +1124,7 @@
 
 @media (max-width: 1200px) {
   .contacto-ubicacion-grid {
-    grid-template-columns: minmax(250px, 300px) 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: var(--spacing-md);
   }
   
