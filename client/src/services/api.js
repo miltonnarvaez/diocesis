@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// VERSIÓN: 2.5 - Detección mejorada de entorno
+// VERSIÓN: 2.6 - Detección de entorno basada SOLO en hostname
 // Determinar el baseURL según el entorno
 const getBaseURL = () => {
   // Si hay una variable de entorno, usarla (tiene prioridad)
@@ -8,16 +8,16 @@ const getBaseURL = () => {
     return process.env.REACT_APP_API_URL;
   }
   
-  // Detectar si estamos en desarrollo (localhost o 127.0.0.1)
-  const isDevelopment = window.location.hostname === 'localhost' || 
-                        window.location.hostname === '127.0.0.1' ||
-                        process.env.NODE_ENV === 'development';
+  // Detectar si estamos en desarrollo SOLO por hostname (más confiable)
+  // NO usar process.env.NODE_ENV porque puede estar hardcodeado en el build
+  const hostname = window.location.hostname;
+  const isDevelopment = hostname === 'localhost' || hostname === '127.0.0.1';
   
   if (isDevelopment) {
     return 'http://localhost:5001/api';
   }
   
-  // En producción, usar el basename relativo
+  // En producción (cualquier otro hostname), usar el basename relativo
   const basename = window.location.pathname.startsWith('/diocesis') ? '/diocesis' : '';
   return `${basename}/api`;
 };
