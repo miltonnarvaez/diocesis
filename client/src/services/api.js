@@ -1,19 +1,23 @@
 import axios from 'axios';
 
-// VERSIÓN: 2.4 - Puerto corregido a 5001 para Diócesis
+// VERSIÓN: 2.5 - Detección mejorada de entorno
 // Determinar el baseURL según el entorno
 const getBaseURL = () => {
-  // SIEMPRE usar 5001 en desarrollo para Diócesis
-  if (process.env.NODE_ENV === 'development') {
-    return 'http://localhost:5001/api';
-  }
-  
-  // Si hay una variable de entorno, usarla
+  // Si hay una variable de entorno, usarla (tiene prioridad)
   if (process.env.REACT_APP_API_URL) {
     return process.env.REACT_APP_API_URL;
   }
   
-  // En producción, usar el basename
+  // Detectar si estamos en desarrollo (localhost o 127.0.0.1)
+  const isDevelopment = window.location.hostname === 'localhost' || 
+                        window.location.hostname === '127.0.0.1' ||
+                        process.env.NODE_ENV === 'development';
+  
+  if (isDevelopment) {
+    return 'http://localhost:5001/api';
+  }
+  
+  // En producción, usar el basename relativo
   const basename = window.location.pathname.startsWith('/diocesis') ? '/diocesis' : '';
   return `${basename}/api`;
 };
