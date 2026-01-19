@@ -982,6 +982,13 @@
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
+  width: 100% !important;
+  max-width: 1200px !important;
+  box-sizing: border-box !important;
+  padding: 0 var(--spacing-md) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  overflow-x: hidden !important;
 }
 
 .contacto-ubicacion .section-title {
@@ -1008,16 +1015,26 @@
 
 .contacto-ubicacion-grid {
   display: grid;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: minmax(280px, 350px) 1fr;
   gap: var(--spacing-lg);
   align-items: stretch;
   margin-top: var(--spacing-md);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacto-ubicacion-info {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
 .contacto-ubicacion-info .contacto-info-card {
@@ -1029,10 +1046,23 @@
   align-items: center;
   gap: var(--spacing-md);
   transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .contacto-ubicacion-info .contacto-info-card:hover {
   transform: translateX(5px);
+}
+
+.contacto-ubicacion-info .contacto-info-card h3,
+.contacto-ubicacion-info .contacto-info-card p {
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .contacto-botones {
@@ -1091,31 +1121,117 @@
   border: 3px solid var(--color-gold);
 }
 
+@media (max-width: 1200px) {
+  .contacto-ubicacion-grid {
+    grid-template-columns: minmax(250px, 300px) 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .contacto-ubicacion .container {
+    padding: 0 var(--spacing-sm) !important;
+  }
+}
+
 @media (max-width: 968px) {
   .contacto-ubicacion-grid {
     grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .contacto-ubicacion .container {
+    padding: 0 var(--spacing-md) !important;
+  }
+  
+  .contacto-ubicacion-info {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
   }
   
   .contacto-ubicacion-mapa {
     aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 100%;
   }
   
   .contacto-ubicacion-mapa .mapa-container {
     aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto-ubicacion-grid {
+    gap: var(--spacing-sm);
+  }
+  
+  .contacto-ubicacion .container {
+    padding: 0 var(--spacing-sm) !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-md);
+    gap: var(--spacing-sm);
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card h3,
+  .contacto-ubicacion-info .contacto-info-card p {
+    text-align: center;
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
+  .contacto-ubicacion-grid {
+    gap: var(--spacing-xs);
+  }
+  
+  .contacto-ubicacion .container {
+    padding: 0 var(--spacing-xs) !important;
+  }
+  
+  .contacto-ubicacion-info {
+    gap: var(--spacing-xs);
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card {
+    padding: var(--spacing-sm);
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card h3 {
+    font-size: 0.9rem;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card p {
+    font-size: 0.85rem;
+  }
+  
   .contacto-botones {
     flex-direction: column;
+    width: 100%;
   }
   
   .contacto-ubicacion-mapa {
     aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 100%;
   }
   
   .contacto-ubicacion-mapa .mapa-container {
     aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 100%;
   }
 }
 

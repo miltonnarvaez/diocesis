@@ -106,9 +106,13 @@ export const AuthProvider = ({ children }) => {
       
       // Mensajes de error más específicos
       if (error.code === 'ECONNREFUSED' || error.message.includes('Network Error')) {
+        const isProduction = process.env.NODE_ENV === 'production';
+        const backendUrl = isProduction 
+          ? 'el servidor' 
+          : 'http://localhost:5001';
         return {
           success: false,
-          error: 'No se puede conectar al servidor. Verifica que el backend esté corriendo en http://localhost:5000'
+          error: `No se puede conectar al servidor. Verifica que el backend esté corriendo en ${backendUrl}`
         };
       }
       

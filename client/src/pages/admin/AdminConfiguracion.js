@@ -178,7 +178,15 @@ const AdminConfiguracion = () => {
                 />
                 {config.documento_institucional_url && (
                   <p className="file-info">
-                    Documento actual: <a href={`http://localhost:5000${config.documento_institucional_url}`} target="_blank" rel="noopener noreferrer">
+                    Documento actual: <a 
+                      href={
+                        process.env.NODE_ENV === 'production'
+                          ? `${window.location.pathname.startsWith('/diocesis') ? '/diocesis' : ''}${config.documento_institucional_url}`
+                          : `http://localhost:5001${config.documento_institucional_url}`
+                      } 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
                       Ver documento actual
                     </a>
                   </p>

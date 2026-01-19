@@ -1,0 +1,159 @@
+/* Fix Responsive - Contacto y Ubicación */
+/* Asegurar que las tarjetas no se corten en pantallas pequeñas */
+
+.contacto-ubicacion {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
+}
+
+.contacto-ubicacion .container {
+  width: 100% !important;
+  max-width: 1200px !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  padding-left: var(--spacing-md) !important;
+  padding-right: var(--spacing-md) !important;
+}
+
+.contacto-ubicacion-grid {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.contacto-ubicacion-info {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  min-width: 0 !important;
+}
+
+.contacto-ubicacion-info .contacto-info-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  min-width: 0 !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.contacto-ubicacion-info .contacto-info-card h3,
+.contacto-ubicacion-info .contacto-info-card p {
+  max-width: 100% !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+  min-width: 0 !important;
+}
+
+/* Media Queries mejoradas */
+
+@media (max-width: 1400px) {
+  .contacto-ubicacion-grid {
+    grid-template-columns: minmax(260px, 320px) 1fr !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contacto-ubicacion-grid {
+    grid-template-columns: minmax(240px, 300px) 1fr !important;
+  }
+  
+  .contacto-ubicacion .container {
+    padding-left: var(--spacing-sm) !important;
+    padding-right: var(--spacing-sm) !important;
+  }
+}
+
+@media (max-width: 968px) {
+  .contacto-ubicacion-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-md) !important;
+  }
+  
+  .contacto-ubicacion .container {
+    padding-left: var(--spacing-md) !important;
+    padding-right: var(--spacing-md) !important;
+  }
+  
+  .contacto-ubicacion-info {
+    order: 1;
+  }
+  
+  .contacto-ubicacion-mapa {
+    order: 2;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card {
+    flex-direction: row !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto-ubicacion .container {
+    padding-left: var(--spacing-sm) !important;
+    padding-right: var(--spacing-sm) !important;
+  }
+  
+  .contacto-ubicacion-grid {
+    gap: var(--spacing-sm) !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: var(--spacing-md) !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card h3,
+  .contacto-ubicacion-info .contacto-info-card p {
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacto-ubicacion .container {
+    padding-left: var(--spacing-xs) !important;
+    padding-right: var(--spacing-xs) !important;
+  }
+  
+  .contacto-ubicacion-grid {
+    gap: var(--spacing-xs) !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card {
+    padding: var(--spacing-sm) !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card h3 {
+    font-size: 0.9rem !important;
+  }
+  
+  .contacto-ubicacion-info .contacto-info-card p {
+    font-size: 0.85rem !important;
+  }
+}
+
+/* Asegurar que no haya overflow horizontal en toda la página */
+.home,
+.home * {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.home .section,
+.home .animated-section {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+}

@@ -72,9 +72,12 @@ const RepositorioUpload = () => {
         
         if (!isMountedRef.current) return;
         
+        const backendUrl = process.env.NODE_ENV === 'production' 
+          ? 'el servidor' 
+          : 'http://localhost:5001';
         setMensaje({ 
           tipo: 'error', 
-          texto: `Error cargando categorías: ${error.response?.data?.error || error.message || 'Error de conexión. Verifica que el servidor esté corriendo en http://localhost:5000'}` 
+          texto: `Error cargando categorías: ${error.response?.data?.error || error.message || `Error de conexión. Verifica que el servidor esté corriendo en ${backendUrl}`}` 
         });
         
         // Establecer categorías por defecto si falla la carga
@@ -102,9 +105,12 @@ const RepositorioUpload = () => {
       if (isMountedRef.current) {
         console.error('⏱️ Timeout cargando categorías después de 8 segundos');
         setCargandoCategorias(false);
+        const backendUrl = process.env.NODE_ENV === 'production' 
+          ? 'el servidor' 
+          : 'http://localhost:5001';
         setMensaje({ 
           tipo: 'error', 
-          texto: 'Tiempo de espera agotado. Verifica que el servidor esté corriendo en http://localhost:5000' 
+          texto: `Tiempo de espera agotado. Verifica que el servidor esté corriendo en ${backendUrl}` 
         });
         // Establecer categorías por defecto
         setCategorias([

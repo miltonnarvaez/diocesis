@@ -38,8 +38,14 @@ const DatosAbiertos = () => {
       });
 
       const url = `/api/datos-abiertos/exportar/${dataset.id}?${params.toString()}`;
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
-      window.location.href = `${apiUrl}${url}`;
+      // En producción usar ruta relativa, en desarrollo usar localhost:5001
+      if (process.env.NODE_ENV === 'production') {
+        const basename = window.location.pathname.startsWith('/diocesis') ? '/diocesis' : '';
+        window.location.href = `${basename}${url}`;
+      } else {
+        const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+        window.location.href = `${apiUrl}${url}`;
+      }
     } catch (error) {
       console.error('Error descargando datos:', error);
       alert('Error al descargar los datos. Por favor, intenta nuevamente.');

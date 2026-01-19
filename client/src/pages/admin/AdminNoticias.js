@@ -53,9 +53,17 @@ const AdminNoticias = () => {
       
       // Cargar imagen existente
       if (editingNoticia.imagen_url) {
-        setImagenPreview(editingNoticia.imagen_url.startsWith('http') 
-          ? editingNoticia.imagen_url 
-          : `${process.env.REACT_APP_API_URL || 'http://localhost:5000'}${editingNoticia.imagen_url}`);
+        if (editingNoticia.imagen_url.startsWith('http')) {
+          setImagenPreview(editingNoticia.imagen_url);
+        } else {
+          // En producción usar ruta relativa, en desarrollo usar localhost:5001
+          if (process.env.NODE_ENV === 'production') {
+            const basename = window.location.pathname.startsWith('/diocesis') ? '/diocesis' : '';
+            setImagenPreview(`${basename}${editingNoticia.imagen_url}`);
+          } else {
+            setImagenPreview(`${process.env.REACT_APP_API_URL || 'http://localhost:5001'}${editingNoticia.imagen_url}`);
+          }
+        }
       } else {
         setImagenPreview(null);
       }
@@ -407,7 +415,15 @@ const AdminNoticias = () => {
                       <h4>Documentos existentes:</h4>
                       {documentosExistentes.map((doc, index) => (
                         <div key={index} className="documento-item">
-                          <a href={`${process.env.REACT_APP_API_URL || 'http://localhost:5000'}${doc.ruta}`} target="_blank" rel="noopener noreferrer">
+                          <a 
+                            href={
+                              process.env.NODE_ENV === 'production'
+                                ? `${window.location.pathname.startsWith('/diocesis') ? '/diocesis' : ''}${doc.ruta}`
+                                : `${process.env.REACT_APP_API_URL || 'http://localhost:5001'}${doc.ruta}`
+                            } 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
                             {doc.nombre}
                           </a>
                           <button type="button" onClick={() => removeDocumentoExistente(index)} className="btn-small btn-danger">

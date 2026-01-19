@@ -18,8 +18,8 @@ export const getFileUrl = (path) => {
     // En producción, usar la ruta relativa con el basename
     return `${basename}${path}`;
   } else {
-    // En desarrollo, usar la base URL del API
-    const baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+    // En desarrollo, usar la base URL del API (puerto 5001 para Diócesis)
+    const baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
     return `${baseURL}${path}`;
   }
 };

@@ -277,8 +277,13 @@ server {
     # Frontend (React) - Ruta /diocesis
     location /diocesis {
         alias /var/www/diocesis/client/build;
-        try_files $uri $uri/ /diocesis/index.html;
+        try_files $uri $uri/ @diocesis;
         index index.html;
+    }
+    
+    # Fallback para React Router
+    location @diocesis {
+        rewrite ^.*$ /diocesis/index.html last;
     }
 
     # Backend API
