@@ -45,7 +45,7 @@ root.render(
   // Deshabilitado StrictMode temporalmente para debug del parpadeo
   // <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/diocesis' : ''}>
+        <BrowserRouter>
         <LanguageProvider>
           <ThemeProvider>
             <AccessibilityProvider>

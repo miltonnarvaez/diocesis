@@ -181,7 +181,7 @@ const AdminConfiguracion = () => {
                     Documento actual: <a 
                       href={
                         process.env.NODE_ENV === 'production'
-                          ? `${window.location.pathname.startsWith('/diocesis') ? '/diocesis' : ''}${config.documento_institucional_url}`
+                          ? config.documento_institucional_url
                           : `http://localhost:5001${config.documento_institucional_url}`
                       } 
                       target="_blank" 

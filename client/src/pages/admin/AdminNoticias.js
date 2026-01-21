@@ -58,8 +58,7 @@ const AdminNoticias = () => {
         } else {
           // En producción usar ruta relativa, en desarrollo usar localhost:5001
           if (process.env.NODE_ENV === 'production') {
-            const basename = window.location.pathname.startsWith('/diocesis') ? '/diocesis' : '';
-            setImagenPreview(`${basename}${editingNoticia.imagen_url}`);
+            setImagenPreview(editingNoticia.imagen_url);
           } else {
             setImagenPreview(`${process.env.REACT_APP_API_URL || 'http://localhost:5001'}${editingNoticia.imagen_url}`);
           }
@@ -418,7 +417,7 @@ const AdminNoticias = () => {
                           <a 
                             href={
                               process.env.NODE_ENV === 'production'
-                                ? `${window.location.pathname.startsWith('/diocesis') ? '/diocesis' : ''}${doc.ruta}`
+                                ? doc.ruta
                                 : `${process.env.REACT_APP_API_URL || 'http://localhost:5001'}${doc.ruta}`
                             } 
                             target="_blank" 

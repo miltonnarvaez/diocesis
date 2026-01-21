@@ -50,21 +50,20 @@ const Breadcrumbs = () => {
   };
 
   // Si estamos en la página de inicio, no mostrar breadcrumbs
-  if (pathnames.length === 0 || (pathnames.length === 1 && pathnames[0] === 'diocesis')) {
+  if (pathnames.length === 0) {
     return null;
   }
 
   const buildPath = (index) => {
     const path = '/' + pathnames.slice(0, index + 1).join('/');
-    // Ajustar para producción
-    return process.env.NODE_ENV === 'production' ? `/diocesis${path}` : path;
+    return path;
   };
 
   return (
     <nav className="breadcrumbs" aria-label="Breadcrumb">
       <ol className="breadcrumbs-list">
         <li className="breadcrumb-item">
-          <Link to={process.env.NODE_ENV === 'production' ? '/diocesis' : '/'} className="breadcrumb-link">
+          <Link to="/" className="breadcrumb-link">
             <FaHome className="breadcrumb-icon" />
             <span>Inicio</span>
           </Link>

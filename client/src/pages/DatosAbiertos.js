@@ -40,8 +40,7 @@ const DatosAbiertos = () => {
       const url = `/api/datos-abiertos/exportar/${dataset.id}?${params.toString()}`;
       // En producción usar ruta relativa, en desarrollo usar localhost:5001
       if (process.env.NODE_ENV === 'production') {
-        const basename = window.location.pathname.startsWith('/diocesis') ? '/diocesis' : '';
-        window.location.href = `${basename}${url}`;
+        window.location.href = url;
       } else {
         const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
         window.location.href = `${apiUrl}${url}`;

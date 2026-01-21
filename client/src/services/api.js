@@ -17,9 +17,8 @@ const getBaseURL = () => {
     return 'http://localhost:5001/api';
   }
   
-  // En producción (cualquier otro hostname), usar el basename relativo
-  const basename = window.location.pathname.startsWith('/diocesis') ? '/diocesis' : '';
-  return `${basename}/api`;
+  // En producción (cualquier otro hostname), usar ruta relativa desde la raíz
+  return '/api';
 };
 
 const api = axios.create({
@@ -55,7 +54,6 @@ api.interceptors.response.use(
     // Solo redirigir a login si es un error 401 Y estamos en una ruta de admin
     if (error.response?.status === 401) {
       const currentPath = window.location.pathname;
-      const basename = process.env.NODE_ENV === 'production' ? '/diocesis' : '';
       const isAdminRoute = currentPath.includes('/admin') && !currentPath.includes('/admin/login');
       
       // Limpiar tokens
@@ -64,7 +62,7 @@ api.interceptors.response.use(
       
       // Solo redirigir si estamos en una ruta de admin protegida
       if (isAdminRoute) {
-        window.location.href = `${basename}/admin/login`;
+        window.location.href = '/admin/login';
       }
     }
     return Promise.reject(error);
